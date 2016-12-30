@@ -1,4 +1,3 @@
-
 /*menu*/
 $('.nav__list').animate({"left": "-100%"}, 600);
 $(".nav__button").click(function() {
