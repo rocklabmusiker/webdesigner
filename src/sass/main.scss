@@ -1,0 +1,23 @@
+// global
+@import "global/page";
+@import "global/fonts";
+@import "global/fancybox";
+@import "global/slider";
+@import "global/modal";
+@import "global/scroll-to-top";
+
+// mixins
+@import "mixins/base-mixins";
+@import "mixins/media-mixins";
+
+// Sprites
+/* @import "sprites/png-sprite"; */  /* To create png-sprite.sass run "gulp sprite"; */
+
+
+// blocks
+@import "blocks/1header";
+@import "blocks/2bitten";
+@import "blocks/3warum";
+@import "blocks/4arbeiten";
+@import "blocks/5ich";
+@import "blocks/6footer";
