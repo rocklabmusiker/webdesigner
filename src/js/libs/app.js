@@ -95,6 +95,14 @@ $(".flip").hover(function() {
   });
 });
 
+//boy
+
+$(".start").click(function() {
+  $(".arbeiten__boy img").animate({top: "-100%"}, 1500);
+  $(".start").css({ display: 'none', transition: 'all .5s ease'});
+  $(".arbeiten__clouds img").css({ opacity: '1', transition: 'all .5s ease'});
+
+});
 
 
  // функции локации

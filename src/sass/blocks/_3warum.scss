@@ -24,7 +24,7 @@
 		        border-radius: 30px;
 		background-color: #2fb3e1;
 		padding: 50px 65px 0;
-		margin: 35px 0 30px;
+		margin: 28px 10px 30px;
 	}
 
 	&__pink {
@@ -35,7 +35,7 @@
 		        border-radius: 30px;
 		background-color: #e75693;
 		padding: 50px 65px 0;
-		margin: 35px 0 30px;
+		margin: 28px 10px 30px;
 	}
 
 	&__titel {
@@ -92,4 +92,92 @@
 		margin-top: 30px;
 	}
 
+}
+
+
+@include max_1450 {
+	.warum__m-wrap {
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+		  
+	}
+
+	.warum__blue, .warum__pink {
+		width: 610px;
+		height: 390px;
+		padding: 30px 45px 0;
+		margin: 30px 10px 30px;
+	}
+
+}
+
+
+@include max_1300 {
+
+	.warum__blue, .warum__pink {
+		width: 560px;
+		height: 390px;
+		padding: 40px 30px 0;
+		margin: 30px 10px 30px;
+	}
+
+}
+
+@include max_1200 {
+
+	.section.warum {
+		height: 1820px;
+	}
+
+}
+
+@include max_650 {
+
+	.warum__blue, .warum__pink {
+		width: 610px;
+		height: auto;
+		padding: 20px 15px 65px 15px;
+		margin: 30px 10px 30px;
+	}
+
+	.warum__titel span {
+	   display: none;
+	}
+
+	.warum__titel h3 {
+	    font-size: 15px;
+	    font-weight: bold;
+	    margin: 8px 0 15px 10px;
+	    text-align: center;
+	}
+
+	.warum__footer img {
+	    margin: 15px auto -15px;
+	    width: 35px;
+	    float: none;
+	}
+
+
+	.warum__footer span {
+	    left: 0;
+	}
+
+}
+
+@include max_480 {
+	.section.warum {
+	    height: 1960px;
+	}
+}
+
+@include max_400 {
+	.section.warum {
+	    height: 2200px;
+	}
+}
+
+@include max_360 {
+	.section.warum {
+	    height: 2450px;
+	}
 }
