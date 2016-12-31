@@ -12,20 +12,70 @@
 			font-size: 20px;
 		}
 	}
+	.header__titel {
+		margin-left: 30px;
+		span {
+			font-size: 135px;
+		}
+		h1 {
+			font-size: 90px;
+		}
+		h2 {
+			font-size: 33px;
+		}
+		p {
+			font-size: 82px;
+		}
+	}
+
 }
 
 @include max_1200 {
+	.section.header {
+		height: 650px;
+	}
+
 	.header__phone p {
 		font-size: 25px;
 	}
+
+	.header__top {
+	    height: 100px;   
+	}
+
 	.nav {
 		&__item a {
 			font-size: 18px;
 		}
 	}
+
+	.header__titel {
+		margin: 50px auto 0;
+		span {
+			font-size: 120px;
+			text-align: center;
+			top: 30px;
+		}
+		h1 {
+			font-size: 80px;
+			text-align: center;
+		}
+		h2 {
+			font-size: 30px;
+			text-align: center;
+		}
+		p {
+			font-size: 70px;
+			text-align: center;
+		}
+	}
 }
 
 @include max_1100 {
+	.section.header {
+		height: 600px;
+	}
+
 	.header__phone p {
 		font-size: 20px;
 	}
@@ -34,12 +84,36 @@
 			font-size: 16px;
 		}
 	}
+
+	.header__titel {
+		margin: 0 auto 0;
+		span {
+			font-size: 110px;
+			top: 30px;
+		}
+
+		h1 {
+			font-size: 70px;
+		}
+
+		h2 {
+			font-size: 27px;
+		}
+
+		p {
+			font-size: 60px;
+		}
+	}
 }
 
 @include max_900 {
+	.section.header {
+		height: 450px;
+		min-height: 450px;
+	}
 
 	.header {
-		&__m-wrap {
+		&__top {
 			-webkit-flex-direction: column;
 			    -ms-flex-direction: column;
 			        flex-direction: column;
@@ -55,7 +129,28 @@
 			padding-right: 0;
 			padding-top: 30px;
 		}
+
+		&__titel {
+			margin: -50px auto 0;
+			span {
+				font-size: 90px;
+				top: 20px;
+			}
+
+			h1 {
+				font-size: 50px;
+			}
+
+			h2 {
+				font-size: 20px;
+			}
+
+			p {
+				font-size: 40px;
+			}
+		}
 	}
+
 	
 	.nav {
 	    -webkit-order: 2;
@@ -67,7 +162,8 @@
 			background-color: #E75593;
 			height: 300px;
 			position: relative;
-			top: 30px;
+			top: 10px;
+			z-index: 1000;
 		}
 
 
@@ -84,7 +180,7 @@
 
 		&__button {
 			float: right;
-			margin: 10px 30px 0 0;
+			margin: -25px 17px 0 0;
 			position: relative;
 			z-index: 100;
 			cursor: pointer;
@@ -147,6 +243,47 @@
 			    -ms-transition: all .5s ease;
 			     -o-transition: all .5s ease;
 			        transition: all .5s ease;
+		}
+	}
+}
+
+@include max_600 {
+	.section.header {
+		height: 350px;
+		min-height: 350px;
+	}
+
+	.nav__button {
+	    margin: -24px 17px 0 0;
+	}
+
+	.nav__list {
+	    height: 305px;
+	    top: 16px;
+	}
+
+	.header__phone {
+	    margin: -16px auto 0;
+	}
+
+	.header__titel {
+		
+		span {
+			font-size: 45px;
+			top: 10px;
+		}
+
+		h1 {
+			font-size: 33px;
+		}
+
+		h2 {
+			font-size: 16px;
+		}
+
+		p {
+			font-size: 25px;
+			margin-top: 7px;
 		}
 	}
 }

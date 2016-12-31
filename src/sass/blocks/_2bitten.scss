@@ -1,3 +1,279 @@
 @import "mixins/base-mixins";
 @import "mixins/media-mixins";
 /* @import "sprites/png-sprite";  */
+
+section.module.parallax{
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 1;
+}
+
+
+.parallax-1{
+	 background-image: url(../images/desktop/paralax_back.jpg);
+	  height: 100vh;
+}
+
+.bitten {
+
+	&__m-wrap h3{
+		color: #FFF;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: rgb(231,86,147);
+	    font-size: 70px;
+		font-weight: bolder;
+		margin-top: 70px;
+	}
+
+	&__m-wrap .was {
+	    font-size: 30px;
+		font-weight: bold;
+		position: relative;
+		top: -29px;
+	}
+
+	&__m-wrap .an {
+	    font-size: 30px;
+		font-weight: bold;
+	}
+	
+	&__content {
+		margin-top: 105px;
+		padding: 0 10px;
+		display: flex;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+
+	}
+	
+}
+
+.flip, .front, .back {
+	height: 335px !important;
+	width: 335px !important;
+}
+
+.front {
+	-webkit-border-radius: 30px;
+	        border-radius: 30px;
+	background-color: #e75693;
+}
+
+.front img, .back img {
+	display: block;
+	margin: 0 auto;
+	padding: 50px 0 15px 0;
+	
+}
+
+.front p {
+	color: #FFF;
+	padding: 0 20px 0;
+	text-align: center;
+	font-size: 30px;
+}
+
+.back {
+	-webkit-border-radius: 30px;
+	        border-radius: 30px;
+	background-color: #2fb3e1;
+}
+
+
+.back p {
+	color: #FFF;
+	padding: 0 20px 0;
+	text-align: center;
+	font-size: 18px;
+}
+
+
+@include max_1450 {
+
+	.flip, .front, .back {
+		height: 300px !important;
+		width: 300px !important;
+	}
+
+
+	.front img, .back img {
+		padding: 50px 0 15px 0;
+		height: 160px;
+	}
+
+	.front p {
+		padding: 0 20px 0;
+		font-size: 25px;
+	}
+
+	.back p {
+		padding: 0 20px 0;
+		font-size: 16px;
+	}
+
+	
+}
+
+@include max_1300 {
+
+	.flip, .front, .back {
+		height: 260px !important;
+		width: 260px !important;
+	}
+
+
+	.front img, .back img {
+		padding: 40px 0 15px 0;
+		height: 130px;
+	}
+
+}
+
+@include max_1200 {
+
+	.parallax-1{
+	  	height: 770px;
+	}
+
+	.bitten {
+
+		&__m-wrap h3{
+			-webkit-text-stroke-width: 2px;
+			-webkit-text-stroke-color: rgb(231,86,147);
+		    font-size: 60px;
+			margin-top: 30px;
+		}
+
+		&__m-wrap .was {
+		    font-size: 25px;
+			top: -25px;
+		}
+
+		&__m-wrap .an {
+		    font-size: 25px;
+		}
+
+		&__content {
+			-webkit-justify-content: space-around;
+			        justify-content: space-around;
+			margin-top: 50px;
+		}
+
+	}
+
+	
+	.flip{
+		margin: 0 15px 50px;
+	}
+
+	.flip, .front, .back {
+		height: 260px !important;
+		width: 260px !important;
+	}
+
+	.front p {
+		font-size: 22px;
+	}
+
+
+}
+
+
+@include max_650 {
+
+	.parallax-1{
+	  	height: 1400px;
+	}
+
+	.bitten {
+
+		&__m-wrap h3{
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: rgb(231,86,147);
+		    font-size: 45px;
+			margin-top: 50px;
+		}
+
+		&__m-wrap .was {
+		    font-size: 20px;
+			top: -18px;
+		}
+
+		&__m-wrap .an {
+		    font-size: 20px;
+		}
+
+		&__content {
+			-webkit-flex-direction: column;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+		    -webkit-align-items: center;
+		            align-items: center;
+			-webkit-justify-content: space-around;
+			        justify-content: space-around;
+			margin-top: 50px;
+		}
+
+	}
+
+}
+
+@include max_480 {
+
+	.parallax-1{
+	  	height: 1300px;
+	}
+
+	.bitten {
+
+		&__m-wrap h3{
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: rgb(231,86,147);
+		    font-size: 30px;
+			margin-top: 40px;
+		}
+
+		&__m-wrap .was {
+		    font-size: 16px;
+			top: -10px;
+		}
+
+		&__m-wrap .an {
+		    font-size: 16px;
+		}
+
+		&__content {
+			margin-top: 50px;
+		}
+
+	}
+
+	
+	.flip{
+		margin: 0 15px 50px;
+	}
+
+	.flip, .front, .back {
+		height: 230px !important;
+		width: 230px !important;
+	}
+
+	.front p {
+		font-size: 22px;
+	}
+
+	.front img, .back img {
+		padding: 25px 0 15px 0;
+		height: 100px;
+	}
+
+
+}

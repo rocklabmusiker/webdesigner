@@ -25,7 +25,7 @@ li {
 	background-repeat: no-repeat;
 	height: 100vh;
 	
-	&__m-wrap {
+	&__top {
 		display: flex;
 		-webkit-justify-content: space-between;
 		        justify-content: space-between;
@@ -44,6 +44,51 @@ li {
 		font-size: 35px;
 		font-weight: bold;
 	}
+
+	&__titel {
+		margin-top: 180px;
+		margin-left: 20px;
+	}
+
+	&__titel span{
+		color: #fff; 
+		font-family: "Roboto";
+		font-size: 150px;
+		font-weight: bold;
+		text-shadow: 5px 5px 14px rgba(0,0,0,.2);
+		display: block;
+		text-align: left;
+		position: relative;
+		top: 40px; 
+	}
+
+	&__titel h1{
+		color: #fff; 
+		font-family: "Roboto";
+		font-size: 100px;
+		font-weight: bold;
+		text-shadow: 5px 5px 14px rgba(0,0,0,.2);
+		text-align: left; 
+	}
+
+	&__titel h2{
+		color: #4b4b4b; 
+		font-family: "Roboto";
+		font-size: 36px;
+		font-weight: bold;
+		text-align: left;
+	}
+
+	&__titel p{
+		color: #e65593;
+		font-family: "Roboto";
+		font-size: 90px;
+		text-shadow: 5px 5px 14px rgba(0,0,0,.2); 
+		text-align: left;
+		margin-top: 15px;
+	}
+
+
 }
 
 .nav {
@@ -61,5 +106,18 @@ li {
 		color: #FFF;
 		font-weight: bold;
 		font-size: 25px;
+	}
+
+	&__item a:hover {
+		color: #2fb3e1;
+		-webkit-transition: all .4s;
+		   -moz-transition: all .4s;
+		    -ms-transition: all .4s;
+		     -o-transition: all .4s;
+		        transition: all .4s;
+	}
+
+	&__item--active {
+		border-bottom: 2px solid #fff;
 	}
 }
