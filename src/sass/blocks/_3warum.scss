@@ -8,8 +8,8 @@
 	
 	&__m-wrap {
 		display: flex;
-		-webkit-justify-content: space-around;
-		        justify-content: space-around;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
 		-webkit-flex-wrap: wrap;
 		    -ms-flex-wrap: wrap;
 		        flex-wrap: wrap;
@@ -17,7 +17,7 @@
 	}
 
 	&__blue {
-		width: 590px;
+		width: 47%;
 		height: 340px;
 		border: 2px solid #fff;
 		-webkit-border-radius: 30px;
@@ -28,7 +28,7 @@
 	}
 
 	&__pink {
-		width: 590px;
+		width: 47%;
 		height: 340px;
 		border: 2px solid #fff;
 		-webkit-border-radius: 30px;

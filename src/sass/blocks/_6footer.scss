@@ -10,4 +10,19 @@
 	        background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh;
+	
+	&__titel {
+		margin: 300px 10px 0 0;
+	}
+	
+	&__m-wrap h3 {
+		color: #fff; 
+		font-family: "Roboto";
+		font-size: 80px;
+		font-weight: bold;
+		text-shadow: 5px 9px 13px rgba(0,0,0,.2);
+		text-align: right; 
+	}
 }
+
+

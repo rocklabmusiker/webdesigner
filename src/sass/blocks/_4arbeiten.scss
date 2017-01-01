@@ -28,8 +28,8 @@
 	&__content {
 		display: flex;
 		position: relative;
-		-webkit-justify-content: space-around;
-		        justify-content: space-around;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
 		padding: 0 20px;
 	} 
 	
