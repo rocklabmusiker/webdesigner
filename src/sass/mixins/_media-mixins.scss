@@ -54,8 +54,44 @@
 	}
 }
 
+@mixin max_390 {
+	@media only screen and(max-width: 390px){
+		@content;
+	}
+}
+
+@mixin max_380 {
+	@media only screen and(max-width: 380px){
+		@content;
+	}
+}
+
+@mixin max_370 {
+	@media only screen and(max-width: 370px){
+		@content;
+	}
+}
+
 @mixin max_360 {
 	@media only screen and(max-width: 360px){
+		@content;
+	}
+}
+
+@mixin max_340 {
+	@media only screen and(max-width: 340px){
+		@content;
+	}
+}
+
+@mixin max_320 {
+	@media only screen and(max-width: 320px){
+		@content;
+	}
+}
+
+@mixin max_280 {
+	@media only screen and(max-width: 280px){
 		@content;
 	}
 }

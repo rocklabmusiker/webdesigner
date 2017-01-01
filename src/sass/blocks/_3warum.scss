@@ -172,12 +172,48 @@
 
 @include max_400 {
 	.section.warum {
-	    height: 2200px;
+	    height: 2000px;
+	}
+}
+
+@include max_390 {
+	.section.warum {
+	    height: 2100px;
+	}
+}
+
+@include max_380 {
+	.section.warum {
+	    height: 2100px;
+	}
+}
+
+@include max_370 {
+	.section.warum {
+	    height: 2150px;
 	}
 }
 
 @include max_360 {
 	.section.warum {
-	    height: 2450px;
+	    height: 2200px;
+	}
+}
+
+@include max_340 {
+	.section.warum {
+	    height: 2300px;
+	}
+}
+
+@include max_320 {
+	.section.warum {
+	    height: 2540px;
+	}
+}
+
+@include max_280 {
+	.section.warum {
+	    height: 2650px;
 	}
 }
