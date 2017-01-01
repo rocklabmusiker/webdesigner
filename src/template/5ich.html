@@ -1,7 +1,37 @@
 	<section class="section ich module parallax parallax-2">
 		<div class="wrap ich__wrap">
 		 	<div class="m-wrap ich__m-wrap">
+				<div class="ich__bio">
+					<img src="../images/desktop/ich_flagge.png" alt="flagge">
+					<img src="../images/desktop/ich_photo.jpg" alt="photo">
+					<h4>Daniel Wagner</h4>
+					<span>35 Jahre alt</span>
+					<span>Web–Entwickler</span>
+					<p>Ich bin ursprünglich aus Kasachstan, lebe in Deutschland seit 15 Jahren, bin verheiratet und habe 3 Kinder.</p>
+					<p>In der Webentwicklung bin ich schon seit mehr als 3 Jahre lang beschäftigt, habe alles selbst gelernt und bin immer noch dabei.</p>
+					<span>Ich kann HTML, CSS(Sass), jQuery, Wordpress, Bootstrap, Foundation, GULP, GIT, Photoshop zur Zeit lerne ich PHP und MySQL.</span>
+					<span>Ich spreche Deutsch, Russisch(Muttersprache), Englisch(vorgeschritten).</span>
+					<p>Ich bitte diesen Kurs an, weil Kinder viel Potenzial haben, aber sie haben kaum Möglichkeit  sich mit dem Webdisign kennenzulernen, das habe ich an meinen Kindern gesehen. <span>Diesen Kurs habe ich meinen Kindern vorgeführt und sie waren davon begeistert. Der Kurs ist an Kinder orientiert und passt bestimmt auch Ihrem Kind.</span></p>
+				</div>
+				<div class="ich__form-block">
+					<h4>HABEN SIE NOCH FRAGEN?</h4>
+					<h4>SCHREIBEN SIE MIR.</h4>
+					<form class="ich__form form" action="ajax/mail.php" method="post">
+						<input type="text" name="name" placeholder="Ваше имя">
+						<input type="text" name="email" placeholder="Ваш email">
+						<input type="hidden" name="frmid" value="Форма в первом блоке">
+						<textarea placeholder="Ваше сообщение"></textarea>
+						<button type="submit">ABSCHICKEN</button>
+					</form>
 					
+					<!-- pop up -->
+					<div id="hidden-box">
+					    <div id="form-error-pop">
+						<div id="form-error-text"></div>
+					    </div>
+					    <div id="okgo">Danke für die Nachricht</div>	
+					</div>
+				</div>	
 		 
 		 	</div>
 		</div>

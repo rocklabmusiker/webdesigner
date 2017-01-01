@@ -48,6 +48,12 @@
 	}
 }
 
+@mixin max_460 {
+	@media only screen and(max-width: 460px){
+		@content;
+	}
+}
+
 @mixin max_400 {
 	@media only screen and(max-width: 400px){
 		@content;

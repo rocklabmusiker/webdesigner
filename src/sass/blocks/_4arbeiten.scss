@@ -8,28 +8,28 @@
 	
 	&__m-wrap h3 {
 		color: #FFF;
-		font-size: 60px;
+		font-size: 40px;
 		font-weight: bold;
-		margin-top: 50px;
+		margin-top: 30px;
 	}
 
 	&__m-wrap .wie {
 		color: #FFF;
-		font-size: 30px;
+		font-size: 20px;
 		position: relative;
-		top: -22px;
+		top: -13px;
 	}
 
 	&__m-wrap .wir {
 		color: #FFF;
-		font-size: 30px;
+		font-size: 20px;
 	}
 	
 	&__content {
 		display: flex;
 		position: relative;
-		-webkit-justify-content: space-between;
-		        justify-content: space-between;
+		-webkit-justify-content: space-around;
+		        justify-content: space-around;
 		padding: 0 20px;
 	} 
 	
@@ -37,51 +37,50 @@
 		display: none;
 	}
 
-	&__clouds {
-		position: relative;
-	}
 
 	&__clouds img {
-		position: relative;
+		position: absolute;
 		opacity: 0;
 	}
 
 	&__clouds img:nth-of-type(1) {
-		right: 110px;
-		top: -70px;
-		width: 57%;
+		left: -2%;
+	    top: -2%;
+	    width: 26%;
 	}
 
 	&__clouds img:nth-of-type(2) {
-		right: -390px;
-    	top: -215px;
-    	width: 57%;
+		right: 48%;
+	    top: 16%;
+	    width: 30%;
 	}
 
 	&__clouds img:nth-of-type(3) {
-		right: -30px;
-    	top: -440px;
-    	width: 57%;
+		right: 62%;
+	    top: 65%;
+	    width: 32%;
 	}
 
 
 	&__boy img{
-		position: absolute;
-		z-index: 1000;
-		left: -4px;
+		left: 85px;
+	    position: absolute;
+	    top: 130px;
+	    width: 26%;
+	    z-index: 1000;
 	}
 
 	&__boy button {
-		width: 490px;
-		height: 90px;
+		width: 380px;
+		height: 70px;
 		position: absolute;
-		top: 645px;
-		left: 16px;
+		top: 600px;
+		left: 75px;
 		display: block;
 		background-color: #e75693;
 		color: #fff;
 		font-weight: bold;
-		font-size: 30px;
+		font-size: 25px;
 		border: none;
 		-webkit-border-radius: 30px;
 		        border-radius: 30px;
@@ -103,10 +102,11 @@
 
 	&__kosten {
 		max-width: 500px;
-		height: 720px;
+		height: 680px;
 		background-color: #2fb3e1;
 		position: relative;
 		z-index: 100;
+		margin-top: 20px;
 		-webkit-border-radius: 30px;
 		        border-radius: 30px;
 	}
@@ -115,7 +115,7 @@
 		color: #e0dd35;
 		font-size: 20px;
 		font-weight: bold;
-		margin-bottom: 20px;
+		margin: 40px 0 10px;
 		text-align: left;
 		padding: 0 20px;
 	}
@@ -124,7 +124,7 @@
 		color: #fff; 
 		font-family: "Roboto";
 		font-size: 16px;
-		text-align: justify;
+		text-align: left;
 		margin-bottom: -20px;
 		line-height: 22px;
 		padding: 0 20px;
@@ -183,8 +183,29 @@
 		text-shadow: 3px 4px 5px rgba(0,159,227,.3); 
 	}
 
+}
+
+.puls {
+  animation: b 3s ease-in-out infinite;
+}
 
 
+@keyframes b {
+  0% {
+    -moz-transform: scale(0.98, 0.98);
+    -ms-transform: scale(0.98, 0.98);
+    transform: scale(0.98, 0.98);
+  }
+  50% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -moz-transform: scale(0.98, 0.98);
+    -ms-transform: scale(0.98, 0.98);
+    transform: scale(0.98, 0.98);
+  }
 }
 
 
@@ -193,21 +214,21 @@
 	.arbeiten {
 
 		&__clouds img:nth-of-type(1) {
-			right: 35px;
-			top: -50px;
-			width: 55%;
+			left: -2%;
+		    top: -2%;
+		    width: 30%;
 		}
 
 		&__clouds img:nth-of-type(2) {
-			right: -400px;
-		    top: -120px;
-		    width: 55%;
+			right: 47%;
+		    top: 25%;
+		    width: 32%;
 		}
 
 		&__clouds img:nth-of-type(3) {
-			right: -60px;
-	    	top: -280px;
-	    	width: 55%;
+			right: 62%;
+		    top: 72%;
+		    width: 33%;
 		}
 	}
 }
@@ -217,21 +238,21 @@
 	.arbeiten {
 
 		&__clouds img:nth-of-type(1) {
-			right: 60px;
-			top: -56px;
-			width: 65%;
+			left: -2%;
+		    top: -2%;
+		    width: 30%;
 		}
 
 		&__clouds img:nth-of-type(2) {
-			right: -260px;
-		    top: -80px;
-		    width: 65%;
+			right: 50%;
+		    top: 25%;
+		    width: 32%;
 		}
 
 		&__clouds img:nth-of-type(3) {
-			right: 10px;
-	    	top: -250px;
-	    	width: 65%;
+			right: 67%;
+		    top: 72%;
+		    width: 33%;
 		}
 	}
 }
@@ -272,6 +293,7 @@
 			height: 450px;
 			background-color: #fff;
 			z-index: 100;
+			padding: 0 20px;
 			-webkit-border-radius: 30px;
 		        	border-radius: 30px;
 		}
@@ -281,7 +303,7 @@
 			font-weight: bold;
 			font-size: 30px;
 			text-align: left;
-			padding: 0 10px 5px 38px;
+			padding: 15px 10px 5px;
 		}
 
 		&__bonus h3 span {
@@ -305,6 +327,10 @@
 }
 
 @include max_650 {
+	.section.arbeiten {
+		height: 1350px;
+	}
+
 	.arbeiten {
 		&__m-wrap h3 {
 			font-size: 45px;
@@ -326,7 +352,25 @@
 
 		&__bonus {
 			height: auto;
-			padding-bottom: 40px;
+			padding: 0 0 50px 20px;	
+		}
+
+
+		&__bonus h3 {
+			font-size: 24px;
+			padding: 0;
+		}
+
+		&__bonus h3 span {
+			font-size: 20px;
+		    padding: 0 0 0 15px;
+		    text-align: left;
+		}
+
+		&__bonus p {
+			font-size: 16px;
+			text-align: left;
+			padding: 0 38px;
 		}
 
 		&__kosten h3 {
@@ -340,7 +384,7 @@
 			text-align: left;
 			margin-bottom: -20px;
 			line-height: 22px;
-			padding: 0 20px;
+			padding: 24px 20px 0;
 		}
 
 		&__kosten span {
@@ -367,6 +411,11 @@
 }
 
 @include max_480 {
+
+	.section.arbeiten {
+	    height: 1400px;
+	}
+
 	.arbeiten {
 
 		&__m-wrap h3 {
@@ -396,10 +445,15 @@
 		    text-align: center;
 		}
 
+		&__bonus {
+		    height: auto;
+		    padding: 0 0 40px 10px;
+		}
+
 		&__bonus h3 {
 			font-size: 22px;
 			text-align: left;
-			padding: 0 10px 5px 38px;
+			padding: 0;
 		}
 
 		&__bonus h3 span {
@@ -410,13 +464,19 @@
 		&__bonus p {
 			font-size: 16px;
 			text-align: left;
-			padding: 0 38px;
+			padding: 10px;
 		}
+	}
+}
+
+@include max_460 {
+	.section.arbeiten {
+	    height: 1500px;
 	}
 }
 
 @include max_360 {
 	.section.arbeiten {
-	    height: 1810px;
+	    height: 1840px;
 	}
 }
