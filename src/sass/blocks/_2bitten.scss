@@ -142,7 +142,11 @@ section.module.parallax{
 }
 
 
-@include max_1450 {
+@include max_1550 {
+
+	.bitten__content {
+	    padding: 0 20px;
+	}
 
 	.flip, .front, .back {
 		height: 300px !important;
@@ -153,6 +157,7 @@ section.module.parallax{
 	.front img, .back img {
 		padding: 50px 0 15px 0;
 		height: 160px;
+		margin: 0 auto;
 	}
 
 	.front p {

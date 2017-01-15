@@ -209,7 +209,8 @@
 			display: block;
 			width: 30px;
 			height: 2px;
-			background-color: #FFF;	
+			background-color: #FFF;
+			position: relative;	
 		}
 
 		&__button span:nth-of-type(2)::after {
@@ -219,6 +220,7 @@
 			height: 2px;
 			background-color: #FFF;	
 			margin-top: 10px;
+			position: relative;
 		}
 
 		&__button span:nth-of-type(3)::after {
@@ -228,6 +230,7 @@
 			height: 2px;
 			background-color: #FFF;	
 			margin-top: 10px;
+			position: relative;
 		}
 
 		&__button:hover span:nth-of-type(1)::after {

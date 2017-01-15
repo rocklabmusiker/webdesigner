@@ -4,13 +4,12 @@ $(".nav__button").click(function() {
 
   if($(this).attr('data-click-state') == 0) {
       $(this).attr('data-click-state',1);
-      $('.nav__list').animate({"left": "-115%"}, 600);
-     
+      $('.nav__list').animate({"left": "-115%"}, 600);  
     }
 
     else {
       $(this).attr('data-click-state', 0);
-      $('.nav__list').animate({"left": "0"}, 600); 
+      $('.nav__list').animate({"left": "0"}, 600);
     }
 
 });
