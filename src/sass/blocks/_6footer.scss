@@ -12,7 +12,7 @@
 	height: 100vh;
 	
 	&__titel {
-		margin: 300px 10px 0 0;
+		margin: 300px 15px 0 0;
 	}
 	
 	&__m-wrap h3 {
@@ -22,6 +22,32 @@
 		font-weight: bold;
 		text-shadow: 5px 9px 13px rgba(0,0,0,.2);
 		text-align: right; 
+	}
+}
+
+@include max_1200 {
+	.footer {
+		&__titel {
+		margin: 280px 80px 0 0;
+		}
+	
+		&__m-wrap h3 {
+			font-size: 60px;
+			text-align: right; 
+		}
+	}
+}
+
+@include max_900 {
+	.footer {
+		&__titel {
+		margin: 270px 80px 0 0;
+		}
+	
+		&__m-wrap h3 {
+			font-size: 50px;
+			text-align: right; 
+		}
 	}
 }
 

@@ -2,33 +2,39 @@
 @import "mixins/media-mixins";
 /* @import "sprites/png-sprite";  */
 
+@include max_1550 {
+	.header__top {
+    	padding: 0 50px;
+	}
 
-@include max_1300 {
 	.header__phone p {
-		font-size: 30px;
+		font-size: 22px;
 	}
 	.nav {
 		&__item a {
-			font-size: 20px;
+			font-size: 18px;
 		}
 	}
 	.header__titel {
-		margin-left: 30px;
+		margin-left: 70px;
+		
 		span {
-			font-size: 135px;
+			font-size: 80px;
+			top: 15px;
 		}
 		h1 {
-			font-size: 90px;
+			font-size: 60px;
 		}
 		h2 {
-			font-size: 33px;
+			font-size: 18px;
 		}
 		p {
-			font-size: 82px;
+			font-size: 45px;
 		}
 	}
 
 }
+
 
 @include max_1200 {
 	.section.header {
@@ -36,37 +42,34 @@
 	}
 
 	.header__phone p {
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 	.header__top {
-	    height: 100px;   
+	    height: 105px;   
 	}
 
 	.nav {
 		&__item a {
-			font-size: 18px;
+			font-size: 16px;
 		}
 	}
 
 	.header__titel {
-		margin: 50px auto 0;
+		margin: 50px 0 0 70px;
+		
 		span {
-			font-size: 120px;
-			text-align: center;
-			top: 30px;
+			font-size: 80px;
+			top: 10px;
 		}
 		h1 {
-			font-size: 80px;
-			text-align: center;
+			font-size: 60px;
 		}
 		h2 {
-			font-size: 30px;
-			text-align: center;
+			font-size: 18px;
 		}
 		p {
-			font-size: 70px;
-			text-align: center;
+			font-size: 45px;
 		}
 	}
 }
@@ -77,31 +80,41 @@
 	}
 
 	.header__phone p {
-		font-size: 20px;
+		font-size: 17px;
 	}
+
+	.header__top {
+	    height: 100px;   
+	}
+
 	.nav {
+
+		&__item {
+		    margin-right: 26px;
+		} 
+
 		&__item a {
 			font-size: 16px;
 		}
 	}
 
 	.header__titel {
-		margin: 0 auto 0;
+		margin: 50px 0 0 70px;
 		span {
-			font-size: 110px;
-			top: 30px;
+			font-size: 70px;
+			top: 10px;
 		}
 
 		h1 {
-			font-size: 70px;
+			font-size: 50px;
 		}
 
 		h2 {
-			font-size: 27px;
+			font-size: 18px;
 		}
 
 		p {
-			font-size: 60px;
+			font-size: 40px;
 		}
 	}
 }
@@ -118,6 +131,7 @@
 			    -ms-flex-direction: column;
 			        flex-direction: column;
 			height: 150px;
+			padding: 0;
 		}
 
 		&__phone {
@@ -125,28 +139,29 @@
 		}
 
 		&__phone p {
-			font-size: 20px;
-			padding-right: 0;
-			padding-top: 30px;
+			font-size: 18px;
+		    padding-right: 0;
+		    padding-top: 7px;
 		}
 
 		&__titel {
-			margin: -50px auto 0;
+			margin: -70px 0 0 70px;
+			
 			span {
-				font-size: 90px;
-				top: 20px;
+				font-size: 60px;
+				top: 14px;
 			}
 
 			h1 {
-				font-size: 50px;
+				font-size: 40px;
 			}
 
 			h2 {
-				font-size: 20px;
+				font-size: 17px;
 			}
 
 			p {
-				font-size: 40px;
+				font-size: 35px;
 			}
 		}
 	}
@@ -160,10 +175,12 @@
 	    
 		&__list {
 			background-color: #E75593;
-			height: 300px;
+			height: 320px;
 			position: relative;
-			top: 10px;
+			top: 5px;
 			z-index: 1000;
+			width: 100%;
+
 		}
 
 
@@ -174,13 +191,14 @@
 			position: relative;
 		}
 
+
 		&__item a {
 			font-size: 16px;
 		}
 
 		&__button {
 			float: right;
-			margin: -25px 17px 0 0;
+			margin: -40px 17px 0 0;
 			position: relative;
 			z-index: 100;
 			cursor: pointer;
@@ -254,36 +272,43 @@
 	}
 
 	.nav__button {
-	    margin: -24px 17px 0 0;
+	    margin: -35px 17px 0 0;
 	}
 
 	.nav__list {
 	    height: 305px;
-	    top: 12px;
+	    top: 0;
 	}
 
 	.header__phone {
-	    margin: -16px auto 0;
+	    margin: -4px auto 0;
+	}
+
+	.header__phone p{
+	    font-size: 16px;
 	}
 
 	.header__titel {
+		margin: -125px 0 0 40px;
 		
 		span {
-			font-size: 45px;
-			top: 10px;
+			font-size: 40px;
+			top: 7px;
 		}
 
 		h1 {
-			font-size: 33px;
+			font-size: 27px;
 		}
 
 		h2 {
 			font-size: 16px;
+			margin: 100px 0 0 -21px;
 		}
 
 		p {
-			font-size: 25px;
+			font-size: 20px;
 			margin-top: 7px;
+			font-weight: bold;
 		}
 	}
 }

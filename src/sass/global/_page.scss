@@ -67,3 +67,14 @@ img {
   clip: rect(0 0 0 0);
   overflow:hidden;
 }
+
+#maket {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background: url(../junge-webdesigner.jpg) no-repeat top center;
+    height: 5502px;
+      /* opacity: 0.5; 
+             z-index: 10; */   
+}

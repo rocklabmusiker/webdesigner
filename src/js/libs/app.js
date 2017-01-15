@@ -1,10 +1,10 @@
 /*menu*/
-$('.nav__list').animate({"left": "-100%"}, 600);
+$('.nav__list').animate({"left": "-115%"}, 600);
 $(".nav__button").click(function() {
 
   if($(this).attr('data-click-state') == 0) {
       $(this).attr('data-click-state',1);
-      $('.nav__list').animate({"left": "-100%"}, 600);
+      $('.nav__list').animate({"left": "-115%"}, 600);
      
     }
 
@@ -83,15 +83,55 @@ $(".bitten__time").flip({
 
 });
 
-$(".flip").hover(function() {
-  $(".bitten__m-wrap h3").css({
-    webkitTextStroke: '2px #2fb3e1',
+$(".bitten__prise").hover(function() {
+  $(".bitten__m-wrap h3 span:nth-child(1)").css({
+    color: '#8af04d',
+    transform: 'rotate(180deg)',
     transition: 'all .4s'
   });
 }, function() {
-  $(".bitten__m-wrap h3").css({
-    webkitTextStroke: '2px #e75693',
+  $(".bitten__m-wrap h3 span:nth-child(1)").css({
+    color: '#2fb3e1',
+    transform: 'rotate(0deg)'
+  });
+});
+
+$(".bitten__cloud").hover(function() {
+  $(".bitten__m-wrap h3 span:nth-child(2)").css({
+    color: '#e75693',
+    transform: 'rotate(180deg)',
     transition: 'all .4s'
+  });
+}, function() {
+  $(".bitten__m-wrap h3 span:nth-child(2)").css({
+    color: '#7467bf',
+    transform: 'rotate(0deg)'
+  });
+});
+
+$(".bitten__uhu").hover(function() {
+  $(".bitten__m-wrap h3 span:nth-child(3)").css({
+    color: '#2fb3e1',
+    transform: 'rotate(180deg)',
+    transition: 'all .4s'
+  });
+}, function() {
+  $(".bitten__m-wrap h3 span:nth-child(3)").css({
+    color: '#8af04d',
+    transform: 'rotate(0deg)'
+  });
+});
+
+$(".bitten__time").hover(function() {
+  $(".bitten__m-wrap h3 span:nth-child(4)").css({
+    color: '#7467bf',
+    transform: 'rotate(180deg)',
+    transition: 'all .4s'
+  });
+}, function() {
+  $(".bitten__m-wrap h3 span:nth-child(4)").css({
+    color: '#e75693',
+    transform: 'rotate(0deg)'
   });
 });
 

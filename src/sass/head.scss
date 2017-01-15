@@ -31,18 +31,20 @@ li {
 		        justify-content: space-between;
 		-webkit-align-items: center;
 		        align-items: center;
-		height: 150px;
+		height: 160px;
 	}
 
 	&__phone {
-		margin-top: -5px;
-		padding-right: 20px;
+		margin-top: -12px;
+		padding-right: 14px;
 	}
 
 	&__phone p{
 		color: #FFF;
-		font-size: 35px;
+		font-size: 36px;
 		font-weight: bold;
+		text-align: right;
+		word-spacing: 32px;
 	}
 
 	&__titel {
@@ -53,39 +55,47 @@ li {
 	&__titel span{
 		color: #fff; 
 		font-family: "Roboto";
-		font-size: 150px;
-		font-weight: bold;
 		text-shadow: 5px 5px 14px rgba(0,0,0,.2);
-		display: block;
 		text-align: left;
-		position: relative;
-		top: 40px; 
+	    font-size: 100px;
+	    font-weight: bold;
+	    
+	    display: block;
+	    
+	    position: relative;
+	    top: 4px; 
 	}
 
 	&__titel h1{
 		color: #fff; 
 		font-family: "Roboto";
-		font-size: 100px;
+		font-size: 80px;
 		font-weight: bold;
 		text-shadow: 5px 5px 14px rgba(0,0,0,.2);
-		text-align: left; 
+		text-align: left;
+		
+		position: relative;
+		top: 100px; 
+		left: -21px;
+
 	}
 
 	&__titel h2{
 		color: #4b4b4b; 
 		font-family: "Roboto";
-		font-size: 36px;
+		font-size: 20px;
 		font-weight: bold;
 		text-align: left;
+		margin: 95px 0 0 -21px;
 	}
 
 	&__titel p{
 		color: #e65593;
 		font-family: "Roboto";
-		font-size: 90px;
+		font-size: 60px;
 		text-shadow: 5px 5px 14px rgba(0,0,0,.2); 
 		text-align: left;
-		margin-top: 15px;
+		margin: 0 0 0 -21px;
 	}
 
 
@@ -99,22 +109,62 @@ li {
 	
 	&__item{
 		display: inline-block;
-		padding-left: 30px;
+		margin-right: 53px;
 	}
 
 	&__item a {
-		color: #FFF;
 		font-weight: bold;
-		font-size: 25px;
+		font-size: 24px;
+		color: #FFF;
+		-webkit-transition: color .4s;
+		   -moz-transition: color .4s;
+		    -ms-transition: color .4s;
+		     -o-transition: color .4s;
+		        transition: color .4s;
+	}
+
+	&__item a span:nth-child(1){
+		color: #2fb3e1;
+		font-size: inherit;
+	}
+
+	&__item a:hover span:nth-child(1){
+		color: #fff;
+		font-size: inherit;
+	}
+
+	&__item a span:nth-child(2){
+		color: #7467bf;
+		font-size: inherit;
+	}
+
+	&__item a:hover span:nth-child(2){
+		color: #8af04d;
+		font-size: inherit;
+	}
+
+	&__item a span:nth-child(3){
+		color: #8af04d;
+		font-size: inherit;
+	}
+
+	&__item a:hover span:nth-child(3){
+		color: #7467bf;
+		font-size: inherit;
+	}
+
+	&__item a span:nth-child(4){
+		color: #fff;
+		font-size: inherit;
+	}
+
+	&__item a:hover span:nth-child(4){
+		color: #2fb3e1;
+		font-size: inherit;
 	}
 
 	&__item a:hover {
 		color: #2fb3e1;
-		-webkit-transition: all .4s;
-		   -moz-transition: all .4s;
-		    -ms-transition: all .4s;
-		     -o-transition: all .4s;
-		        transition: all .4s;
 	}
 
 	&__item--active {

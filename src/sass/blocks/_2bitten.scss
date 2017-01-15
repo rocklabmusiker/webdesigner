@@ -22,29 +22,40 @@ section.module.parallax{
 .bitten {
 
 	&__m-wrap h3{
-		color: #FFF;
-		-webkit-text-stroke-width: 2px;
-		-webkit-text-stroke-color: rgb(231,86,147);
 	    font-size: 40px;
-		font-weight: bolder;
-		margin-top: 70px;
+		font-weight: bold;
+		margin-top: 118px;
+		color: #fff;
 	}
 
-	&__m-wrap .was {
-	    font-size: 20px;
-		font-weight: bold;
+	&__m-wrap h3 span:nth-child(1){
+		color: #2fb3e1;
 		position: relative;
-		top: -13px;
+		display: inline-block;
 	}
 
-	&__m-wrap .an {
-	    font-size: 20px;
-		font-weight: bold;
+	&__m-wrap h3 span:nth-child(2){
+		color: #7467bf;
+		position: relative;
+		display: inline-block;
 	}
+
+	&__m-wrap h3 span:nth-child(3){
+		color: #8af04d;
+		position: relative;
+		display: inline-block;
+	}
+
+	&__m-wrap h3 span:nth-child(4){
+		color: #e75693;
+		position: relative;
+		display: inline-block;
+	}
+
 	
 	&__content {
-		margin-top: 105px;
-		padding: 0 10px;
+		margin-top: 110px;
+		/* padding: 0 20px; */
 		display: flex;
 		-webkit-justify-content: space-between;
 		        justify-content: space-between;
@@ -52,6 +63,44 @@ section.module.parallax{
 		    -ms-flex-wrap: wrap;
 		        flex-wrap: wrap;
 
+	}
+
+	&__content .front, .back {
+		-webkit-border-radius: 30px;
+	        	border-radius: 30px;
+	}
+
+	&__prise .front {
+		background-color: #2fb3e1;
+	}
+
+	&__prise .back {
+		background-color: #8af04d;
+		
+	}
+
+	&__cloud .front{
+		background-color: #7467bf;
+	}
+
+	&__cloud .back {
+		background-color: #e75693;
+	}
+
+	&__uhu .front {
+		background-color: #8af04d;
+	}
+
+	&__uhu .back {
+		background-color: #2fb3e1;
+	}
+
+	&__time .front {
+		background-color: #e75693;
+	}
+
+	&__time .back {
+		background-color: #7467bf;
 	}
 	
 }
@@ -61,17 +110,18 @@ section.module.parallax{
 	width: 335px !important;
 }
 
-.front {
-	-webkit-border-radius: 30px;
-	        border-radius: 30px;
-	background-color: #e75693;
+
+.front img {
+	display: block;
+	height: 31%;
+    margin: 80px auto 10px;
 }
 
-.front img, .back img {
+.back img {
 	display: block;
-	margin: 0 auto;
-	padding: 50px 0 15px 0;
-	
+	height: 55%;
+    padding: 80px 0 10px 0;
+    margin: 0 auto;
 }
 
 .front p {
@@ -79,12 +129,7 @@ section.module.parallax{
 	padding: 0 20px 0;
 	text-align: center;
 	font-size: 30px;
-}
-
-.back {
-	-webkit-border-radius: 30px;
-	        border-radius: 30px;
-	background-color: #2fb3e1;
+	font-weight: bold;
 }
 
 
@@ -93,6 +138,7 @@ section.module.parallax{
 	padding: 0 20px 0;
 	text-align: center;
 	font-size: 18px;
+	font-weight: bold;
 }
 
 
@@ -146,8 +192,6 @@ section.module.parallax{
 	.bitten {
 
 		&__m-wrap h3{
-			-webkit-text-stroke-width: 2px;
-			-webkit-text-stroke-color: rgb(231,86,147);
 		    font-size: 40px;
 			margin-top: 30px;
 		}
@@ -196,8 +240,6 @@ section.module.parallax{
 	.bitten {
 
 		&__m-wrap h3{
-			-webkit-text-stroke-width: 1px;
-			-webkit-text-stroke-color: rgb(231,86,147);
 		    font-size: 40px;
 			margin-top: 50px;
 		}
@@ -235,8 +277,6 @@ section.module.parallax{
 	.bitten {
 
 		&__m-wrap h3{
-			-webkit-text-stroke-width: 1px;
-			-webkit-text-stroke-color: rgb(231,86,147);
 		    font-size: 30px;
 			margin-top: 40px;
 		}
