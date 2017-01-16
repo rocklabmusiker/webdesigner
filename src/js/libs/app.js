@@ -149,6 +149,16 @@ $(".start").click(function() {
 
 });
 
+// boxen bei kosten
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 2800 ) {
+    $('.arbeiten__box-blue').delay(1500).animate({right: '0', opacity: '1' }, 2000);
+    $('.arbeiten__box-red').delay(1500).animate({left: '0', opacity: '1' }, 2000);
+  }
+});
+
+
 
  // функции локации
   function getURLParameter(name) {return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;} 
