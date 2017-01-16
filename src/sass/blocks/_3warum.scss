@@ -3,7 +3,12 @@
 /* @import "sprites/png-sprite";  */
 
 .warum {
-	background-color: #E1DE36;
+	background-image: url(../../images/desktop/warum_back.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: 50% 0;
 	height: 100vh;
 	
 	&__m-wrap {
@@ -18,29 +23,37 @@
 	}
 
 	&__blue {
-		width: 47%;
-		height: 340px;
-		border: 2px solid #fff;
+		height: 387px;
+		width: 48%;
+	    margin: 27px -7px 20px;
+	    padding: 32px 58px 0;
+	    border: 2px solid #fff;
 		-webkit-border-radius: 30px;
 		        border-radius: 30px;
-		background-color: #2fb3e1;
-		padding: 20px 45px 0;
-		margin: 35px 10px;
 	}
 
 	&__pink {
-		width: 47%;
-		height: 340px;
-		border: 2px solid #fff;
+		height: 387px;
+		width: 48%;
+	    margin: 27px -7px 20px;
+	    padding: 32px 58px 0;
+	    border: 2px solid #fff;
 		-webkit-border-radius: 30px;
 		        border-radius: 30px;
-		background-color: #e75693;
-		padding: 20px 45px 0;
-		margin: 35px 10px;
 	}
 
-	&__titel {
-		overflow: hidden;
+	&__blue {
+		background-color: #2fb3e1;
+	}
+
+	&__pink {
+		background-color: #e75693;
+	}
+
+	&__titel:after {
+		content: '';
+		display: table;
+		clear: both;
 	}
 
 	&__titel span {
@@ -50,12 +63,14 @@
 	}
 
 	&__titel h3 {
-		float: left;
 		font-size: 20px;
 		color: #FFF;
 		text-align: left;
 		line-height: 27px;
-    	margin: 8px 0 0 10px;
+		position: relative;
+		top: 8px;
+		left: 10px;
+		padding: 0 0 10px;
 	}
 
 	&__blue p {
@@ -73,72 +88,113 @@
 
 	&__footer img{
 		display: block;
-		margin: 30px 0 0 0;
+		margin: 53px 0 0 6px;
 		float: left;
 	}
 
 	&__footer span{
 		font-size: 16px;
 		color: #FFF;
-		margin: 30px 0 0;
-		left: 15px;
+		left: 10px;
 	    position: relative;
-	    top: 30px;
+	    top: 51px;
 	    z-index: 1;
 	    font-weight: bold;
 	    text-align: justify;
 	}
 
-	&__pink .warum__footer {
-		margin-top: 30px;
+	&__footer {
+		margin-top: 0;
+	}
+
+	&__pink-first-row {
+		margin-top: 56px;
+	}
+
+	&__pink-second-row {
+		margin-top: 37px;
+	}
+
+	&__blue-second-row {
+		margin-top: 18px;
 	}
 
 }
 
 
 @include max_1450 {
-	.warum__m-wrap {
-	-webkit-justify-content: space-around;
-	        justify-content: space-around;
-		  
-	}
 
-	.warum__blue, .warum__pink {
-		width: 590px;
-		height: 340px;
-		padding: 30px 45px 0;
-		margin: 20px 10px 30px;
-	}
+	.warum {
 
+		&__m-wrap {
+		-webkit-justify-content: space-around;
+		        justify-content: space-around;	  
+		}
+
+		&__blue {
+			height: auto;
+			padding: 32px 58px 50px;
+		}
+
+		&__pink {
+			height: auto;
+			padding: 32px 58px 50px;
+		}
+
+		&__footer {
+		    margin-top: -20px;
+		}
+
+		&__pink-first-row {
+		margin-top: 37px;
+		}
+
+		&__pink-second-row {
+			margin-top: 16px;
+		}
+
+		&__blue-second-row {
+			margin-top: -22px;
+		}
+	}
 }
 
 
 @include max_1300 {
-
-	.warum__blue, .warum__pink {
-		width: 560px;
-		height: 360px;
-		padding: 40px 30px 0;
-		margin: 20px 10px 30px;
-	}
-
-}
-
-@include max_1200 {
-
 	.section.warum {
-		height: 1820px;
-	}
+			height: 1900px;
+			background-repeat: repeat;
+		}
 
-	.warum__m-wrap {
-		-webkit-flex-direction: column;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-	    -webkit-align-items: center;
-	            align-items: center;
+	.warum {
+
+		&__m-wrap {
+			-webkit-flex-direction: column;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+		    -webkit-align-items: center;
+		            align-items: center;
+		}
+
+		&__blue {
+			max-width: 590px;
+			width: 100%;
+			height: auto;
+			padding: 32px 58px 50px;
+			margin: 30px 10px 30px;
+		}
+
+		&__pink {
+			max-width: 590px;
+			width: 100%;
+			height: auto;
+			padding: 32px 58px 50px;
+			margin: 30px 10px 30px;
+		}
 	}
 
 }
+
 
 @include max_650 {
 
@@ -148,10 +204,17 @@
 		        flex-direction: row;
 	}
 
-	.warum__blue, .warum__pink {
+	.warum__blue{
 		max-width: 590px;
 		height: auto;
-		padding: 20px 15px 65px 15px;
+		padding: 20px 20px 85px;
+		margin: 30px 10px 30px;
+	}
+
+	.warum__pink {
+		max-width: 590px;
+		height: auto;
+		padding: 20px 20px 85px;
 		margin: 30px 10px 30px;
 	}
 
@@ -162,12 +225,31 @@
 	.warum__titel h3 {
 	    font-size: 15px;
 	    font-weight: bold;
-	    margin: 8px 0 15px 10px;
+	    margin: 8px auto 10px;
 	    text-align: center;
+	    left: 0;
+	    top: 0;
+	    line-height: 20px;
 	}
 
+	.warum__pink p {
+		text-align: center;
+	}
+
+	.warum__blue p {
+		text-align: center;
+	}
+
+	.warum__footer,
+	.warum__pink-first-row,
+	.warum__pink-second-row,
+	.warum__blue-second-row {
+	    margin-top: 0;
+	}
+
+
 	.warum__footer img {
-	    margin: 15px auto -15px;
+	    margin: 15px auto -30px;
 	    width: 35px;
 	    float: none;
 	}
@@ -181,54 +263,54 @@
 
 @include max_480 {
 	.section.warum {
-	    height: 1960px;
+	    height: 2060px;
 	}
 }
 
 @include max_400 {
 	.section.warum {
-	    height: 2000px;
+	    height: 2100px;
 	}
 }
 
 @include max_390 {
 	.section.warum {
-	    height: 2100px;
+	    height: 2180px;
 	}
 }
 
 @include max_380 {
 	.section.warum {
-	    height: 2100px;
+	    height: 2240px;
 	}
 }
 
 @include max_370 {
 	.section.warum {
-	    height: 2150px;
+	    height: 2260px;
 	}
 }
 
 @include max_360 {
 	.section.warum {
-	    height: 2200px;
+	    height: 2370px;
 	}
 }
 
 @include max_340 {
 	.section.warum {
-	    height: 2300px;
+	    height: 2520px;
 	}
-}
+} 
 
 @include max_320 {
 	.section.warum {
-	    height: 2540px;
+	    height: 2740px;
 	}
 }
 
-@include max_280 {
+/* @include max_280 {
 	.section.warum {
-	    height: 2650px;
+	    height: 2850px;
 	}
-}
+} */

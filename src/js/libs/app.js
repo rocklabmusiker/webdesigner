@@ -4,12 +4,18 @@ $(".nav__button").click(function() {
 
   if($(this).attr('data-click-state') == 0) {
       $(this).attr('data-click-state',1);
-      $('.nav__list').animate({"left": "-115%"}, 600);  
+      $('.nav__list').animate({"left": "-115%"}, 600);
+      $('.nav__button span:nth-child(1)').css({transform:'rotate(0)',top: '0' });
+      $('.nav__button span:nth-child(2)').css({transform:'rotate(0)',top: '0' });
+      $('.nav__button span:nth-child(3)').css({display:'block' });  
     }
 
     else {
       $(this).attr('data-click-state', 0);
       $('.nav__list').animate({"left": "0"}, 600);
+       $('.nav__button span:nth-child(1)').css({transform:'rotate(45deg)',top: '5px' });
+      $('.nav__button span:nth-child(2)').css({transform:'rotate(-45deg)',top: '-7px' });
+      $('.nav__button span:nth-child(3)').css({display:'none' });
     }
 
 });
