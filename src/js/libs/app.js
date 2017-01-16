@@ -141,20 +141,30 @@ $(".bitten__time").hover(function() {
 });
 
 //boy
+$(".start").hover(function() {
+  $(".arbeiten__boy img").animate({marginTop: "-10px"}, 400);
+}, function() {
+  $(".arbeiten__boy img").animate({marginTop: "0"}, 400);
+});
+
 
 $(".start").click(function() {
   $(".arbeiten__boy img").animate({top: "-100%"}, 1500);
   $(".start").css({ display: 'none', transition: 'all .5s ease'});
-  $(".arbeiten__clouds img").css({ opacity: '1', transition: 'all .5s ease'});
 
+  setTimeout(function () {
+    $(".arbeiten").css({ backgroundImage: 'url(../../images/desktop/arbeiten_back-bonus.jpg)', background: 'all .5s ease'});
+    $(".arbeiten__bonus").css({ opacity: '1', transition: 'all .5s ease'});
+  }, 1000);
+  
 });
 
 // boxen bei kosten
 
 $(window).scroll(function() {
   if ($(this).scrollTop() > 2800 ) {
-    $('.arbeiten__box-blue').delay(1500).animate({right: '0', opacity: '1' }, 2000);
-    $('.arbeiten__box-red').delay(1500).animate({left: '0', opacity: '1' }, 2000);
+    $('.arbeiten__box-blue').delay(1000).animate({right: '0', opacity: '1' }, 2000);
+    $('.arbeiten__box-red').delay(1000).animate({left: '0', opacity: '1' }, 2000);
   }
 });
 
