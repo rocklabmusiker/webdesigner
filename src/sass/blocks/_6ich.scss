@@ -14,10 +14,10 @@ section.module.parallax{
 }
 
 
-.parallax-2{
-	 background-image: url(../images/desktop/paralax_back.jpg);
-	  height: 100vh;
-}
+ .parallax-2{
+   background-image: url(../images/desktop/warum_back.jpg);
+    height: 894px;
+} 
 
 .ich {
 
@@ -30,7 +30,6 @@ section.module.parallax{
 
     &__bio {
       max-width: 600px;
-      height: 100vh;
       background-color: #FFF;
       padding: 0 70px;
       -webkit-box-shadow: 5px 5px 10px rgba(1,1,1, .2);
@@ -39,12 +38,10 @@ section.module.parallax{
 
     &__bio img:nth-of-type(1) {
        margin: 0 0 146px;
-       width: 36%;
     }
 
     &__bio img:nth-of-type(2) {
        margin: 83px 0 -21px 110px;
-       width: 36%;
     }
 
 
@@ -168,7 +165,82 @@ section.module.parallax{
               transition: all .4s ease;
     }
 
+    &__bottom {
+      background-color: #e75693;
+      color: #FFF;
+      font-weight: bold;
+      height: 140px;
+      width: 100%;
+      bottom:163px;
+      padding: 0 260px;
+      position: relative;
+      z-index: 1000;
+      display: flex;
+      -webkit-justify-content: space-between;
+              justify-content: space-between;
+      -webkit-align-items: center;
+              align-items: center;
+    }
+
+    &__first-box {
+      display: flex;
+      -webkit-justify-content: space-between;
+              justify-content: space-between;
+      width: 50%;
+      margin: 0 130px 0 0;
+      
+    }
+
+      &__second-box {
+      display: flex;
+      -webkit-justify-content: space-between;
+              justify-content: space-between;
+      width: 50%;
+      margin: 0 0 0 130px;
+    }
+
+    &__bottom p {
+      padding: 8px 0 0 0;
+      font-size: 18px;
+    }
+
+    &__social img {
+      margin: 14px 0 0 5px;
+ 
+    }
+
+    &__impressum a {
+      text-decoration: underline;
+       font-size: 18px;
+      -webkit-transition: all .4s;
+         -moz-transition: all .4s;
+          -ms-transition: all .4s;
+           -o-transition: all .4s;
+              transition: all .4s;
+    }
+
+    &__impressum a:hover {
+      color: #2FB3E1;
+    }
+
 }
+
+@include max_1760 {
+  .ich {
+        &__bottom {
+        padding: 0 185px;
+    }
+  }
+}
+
+@include max_1550 {
+  .ich {
+        &__bottom {
+        padding: 0 90px;
+    }
+  }
+}
+
 
 @include max_1200 {
   .section.ich {

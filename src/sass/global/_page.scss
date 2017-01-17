@@ -17,14 +17,14 @@ button,input,textarea{outline: none;}
     position: relative;
     z-index: 2;
     min-height: 600px;
-    height: 100vh;
+    height: 917px;
     background-size: cover!important;
     
     .wrap {
         max-width: $wievport;
         position: relative;
         z-index: 2;
-        height: 100vh;
+        height: 917px;
         width: 100%;
         margin: 0 auto;
         .m-wrap {
@@ -68,13 +68,13 @@ img {
   overflow:hidden;
 }
 
-#maket {
+/* #maket {
     position: absolute;
     top: 0px;
     left: 0;
     width: 100%;
     background: url(../junge-webdesigner.jpg) no-repeat top center;
     height: 5502px;
-  /*  opacity: 0.5; 
-         z-index: 10; */      
-}
+   opacity: 0.5; 
+         z-index: 10;     
+} */
