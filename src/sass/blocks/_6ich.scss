@@ -236,7 +236,23 @@ section.module.parallax{
 @include max_1550 {
   .ich {
         &__bottom {
-        padding: 0 90px;
+        padding: 0 80px;
+    }
+  }
+}
+
+@include max_1450 {
+  .ich {
+        &__bottom {
+        padding: 0 60px;
+    }
+  }
+}
+
+@include max_1300 {
+  .ich {
+        &__bottom {
+        padding: 0 40px;
     }
   }
 }
@@ -244,7 +260,7 @@ section.module.parallax{
 
 @include max_1200 {
   .section.ich {
-    height: 1550px;
+      height: 1610px;
   }
   .ich {
     &__m-wrap {
@@ -255,12 +271,34 @@ section.module.parallax{
               align-items: center;
       padding: 0;
     }
+
+    &__bottom {
+      bottom: -493px;
+      padding: 0;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-justify-content: space-between;
+              justify-content: space-between;
+      height: 200px;
+    }
+
+    &__first-box {
+      margin: 0;
+      width: 80%;
+    }
+    &__second-box {
+      margin: 0;
+      width: 80%;
+    }
   }
 }
 
 @include max_650 {
   .section.ich {
-    height: 1550px;
+    height: 1476px;
   }
   .ich {
 
@@ -320,5 +358,79 @@ section.module.parallax{
       font-size: 20px;
       margin: 0 auto;
     }
+
+    &__bottom {
+      bottom: -360px;
+    }
+
   }
+}
+
+@include max_600 {
+  .section.ich {
+      height: 1670px;
+  }
+  .ich {
+
+    &__bottom {
+      bottom: -353px;
+      height: 400px;;
+    }
+
+    &__first-box {
+      margin: 13px 0 19px;
+      width: 80%;
+      display: flex;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-justify-content: space-around;
+              justify-content: space-around;
+    }
+
+    &__second-box {
+      margin: 0 0 50px;
+      width: 80%;
+      display: flex;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-align-items: center;
+              align-items: center;
+    }
+
+    &__social {
+      text-align: center;
+    }
+
+    &__bottom p {
+        padding: 5px 0 0;
+    }
+
+    &__impressum {
+      margin: 20px 0 0;
+    }
+  }
+}
+
+@include max_480 {
+  .section.ich {
+      height: 1834px;
+  }
+
+  .ich__bottom {
+     bottom: -527px;
+     height: 390px;
+  }
+
+  .ich__second-box {
+      margin: 0 0 60px;
+  }
+
+  .ich__impressum {
+      margin: 20px 0 0;
+  }
+
 }

@@ -183,6 +183,16 @@ $(window).scroll(function() {
     }
 
 
+// nice scroll
+
+
+/*$(document).ready(
+    function() {
+      $("#popup-container__impressum").niceScroll({cursorcolor:"#00F"});
+    }
+); */
+
+
 
 jQuery(document).ready(function() {
   
@@ -226,7 +236,42 @@ jQuery(document).ready(function() {
       console.log('main-js.injected');
     }, 1000);
     
-    
+ // modal map
+$(".map").click(function() {
+    $('.popup-position__map').css({display: 'block'});
+    setTimeout(function () {
+      $('.popup-position__map').css({opacity: '1', transition: 'opacity .5s'});
+    });
+});
+
+$(".popup-close__map").click(function() {
+    $('.popup-position__map').css({opacity: '0', transition: 'opacity .5s'});
+    setTimeout(function () {
+      $('.popup-position__map').css({ display: 'none'});
+    }, 1000);
+});
+
+
+
+ // modal impressum
+$(".ich__impressum a").click(function() {
+    $('.popup-position__impressum').css({display: 'block'});
+    setTimeout(function () {
+      $('.popup-position__impressum').css({opacity: '1', transition: 'opacity .5s'});
+    });
+});
+
+$(".popup-position__impressum").click(function() {
+    $('.popup-position__impressum').css({opacity: '0', transition: 'opacity .5s'});
+    setTimeout(function () {
+      $('.popup-position__impressum').css({ display: 'none'});
+    }, 1000);
+});
+
+
+
+
+
 
 // ======скрипты form=======
 
