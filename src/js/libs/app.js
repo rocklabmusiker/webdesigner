@@ -149,7 +149,7 @@ $(".start").hover(function() {
 
 
 $(".start").click(function() {
-  $(".arbeiten__boy img").animate({top: "-100%"}, 1500);
+  $(".arbeiten__boy img").animate({top: "-200%"}, 1500);
   $(".start").css({ display: 'none', transition: 'all .5s ease'});
 
   setTimeout(function () {
