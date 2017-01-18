@@ -79,10 +79,10 @@
 
 .popup-close__map {
 	position: absolute;
-	top: -30px;
-	right: -22px;
+	top: 2px;
+	right: 20px;
 	color: #E75693;
-	font-size: 30px;
+	font-size: 14px;
 	font-weight: bold;
 	cursor: pointer;
 }
@@ -115,9 +115,9 @@
 	background-color: #fff;
 	padding: 20px;
 	overflow: auto;
-	height: 600px;
+	height: auto;
 	max-height: 600px;
-	width: 720px;
+	width: 108%;
 	max-width: 720px;
 	
 	

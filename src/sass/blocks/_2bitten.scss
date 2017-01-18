@@ -2,25 +2,16 @@
 @import "mixins/media-mixins";
 /* @import "sprites/png-sprite";  */
 
-section.module.parallax{
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: 1;
-}
 
-
-.parallax-1{
-	 background-image: url(../images/desktop/paralax_back.jpg);
-	  height: 917px;
-}
 
 .bitten {
-
+	background-image: url(../images/desktop/paralax_back.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: 50% 0;
+	
 	&__m-wrap h3{
 	    font-size: 40px;
 		font-weight: bold;

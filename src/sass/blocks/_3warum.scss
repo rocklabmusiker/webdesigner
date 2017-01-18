@@ -2,15 +2,25 @@
 @import "mixins/media-mixins";
 /* @import "sprites/png-sprite";  */
 
-.warum {
+section.module.parallax{
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 1;
+}
+
+
+.parallax-1{
 	background-image: url(../../images/desktop/warum_back.jpg);
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
-	background-position: 50% 0;
 	height: 917px;
-	
+}
+
+.warum {
+
 	&__m-wrap {
 		display: flex;
 		-webkit-justify-content: space-between;

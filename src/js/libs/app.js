@@ -201,7 +201,7 @@ jQuery(document).ready(function() {
    
  // scroll
 
- $('body').prepend('<a href="#" class="back-to-top"></a>');
+ $('body').prepend('<a href="#" class="back-to-top"><span>TOP</span></a>');
 
  var amountScrolled = 300;
 
@@ -220,6 +220,8 @@ jQuery(document).ready(function() {
           }, 700);
           return false;
         });
+
+       
 
 // hide-pre-loader
     setTimeout(function (argument) {
@@ -307,31 +309,31 @@ $('form').submit(function(e){
           var eror_pop_text = '';
 
           if ($(this).find('input[name="name"]').hasClass('error-input') && !$(this).find('input[name="email"]').hasClass('error-input') && !$(this).find('input[name="phone"]').hasClass('error-input')) {
-              eror_pop_text = 'Пожалуйста введите имя';
+              eror_pop_text = 'Bitte geben Sie Ihren Namen ein';
           } else
 
           if ($(this).find('input[name="phone"]').hasClass('error-input') && !$(this).find('input[name="email"]').hasClass('error-input') && !$(this).find('input[name="name"]').hasClass('error-input')){
-              eror_pop_text = 'Пожалуйста введите телефон';
+              eror_pop_text = 'Bitte geben Sie Ihre Telefonnummer ein';
           }else
 
           if ($(this).find('input[name="email"]').hasClass('error-input') && !$(this).find('input[name="phone"]').hasClass('error-input') && !$(this).find('input[name="name"]').hasClass('error-input')){
-              eror_pop_text = 'Пожалуйста введите Email';
+              eror_pop_text = 'Bitte geben Sie Ihre E-mail ein';
           }else
 
           if ($(this).find('input[name="email"]').hasClass('error-input') && $(this).find('input[name="name"]').hasClass('error-input') && !$(this).find('input[name="phone"]').hasClass('error-input')){
-              eror_pop_text = 'Пожалуйста введите имя и email';
+              eror_pop_text = 'Bitte geben Sie Ihren Namen und E-mail ein';
           }else
 
           if ($(this).find('input[name="name"]').hasClass('error-input') && $(this).find('input[name="phone"]').hasClass('error-input') && !$(this).find('input[name="email"]').hasClass('error-input')){
-              eror_pop_text = 'Пожалуйста введите имя и телефон';
+              eror_pop_text = 'Bitte geben Sie Ihren Namen und die Telefonnummer und ein';
           }else
 
           if ($(this).find('input[name="email"]').hasClass('error-input') && $(this).find('input[name="phone"]').hasClass('error-input') && !$(this).find('input[name="name"]').hasClass('error-input')){
-              eror_pop_text = 'Пожалуйста введите email и телефон';
+              eror_pop_text = 'Bitte geben Sie Ihre E-mail und die Telefonnummer ein';
           }else
 
           if ($(this).find('input[name="phone"]').hasClass('error-input') && $(this).find('input[name="email"]').hasClass('error-input') && $(this).find('input[name="name"]').hasClass('error-input')){
-              eror_pop_text = 'Пожалуйста введите имя, email и телефон';
+              eror_pop_text = 'Bitte geben Sie Ihren Namen, E-mail und die Telefonnummer ein';
           }
 
           $('#form-error-text').html(eror_pop_text);

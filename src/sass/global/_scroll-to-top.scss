@@ -1,24 +1,48 @@
 
 a.back-to-top {
 	display: none;
-	width: 64px;
-	height: 64px;
-    text-indent: -9999px;
+	width: 40px;
+	height: 40px;
+/*     text-indent: -9999px; */
 	position: fixed;
 	z-index: 999;
 	right: 20px;
 	bottom: 20px;
-	background-image: url(../../images/scroll-to-top/arrow.png);
-	background-repeat: no-repeat;
-	background-color: #FA4607;
-	background-position: center 43%;
+	background-color: #7467BF;
+/* 	background-image: url(../../images/scroll-to-top/arrow.png); */
+/* 	background-repeat: no-repeat; */
+/* 	background-position: center 43%; */
 	-webkit-border-radius: 35px;
 	-moz-border-radius: 35px;
 	border-radius: 35px;
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	    -ms-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+}
+
+a.back-to-top span {
+	position: relative;
+	text-align: center;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 40px;
+	left: 4px;
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	    -ms-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
 }
 
 a.back-to-top:hover{
-	background-color: #8F0502;
+	background-color: #8AF04D;
+}
+
+a.back-to-top span:hover {
+	color: #7467BF;
 }
 
 a.back-to-top:focus{

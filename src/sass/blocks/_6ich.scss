@@ -16,7 +16,7 @@ section.module.parallax{
 
  .parallax-2{
    background-image: url(../images/desktop/warum_back.jpg);
-    height: 894px;
+    height: 917px;
 } 
 
 .ich {
@@ -26,6 +26,7 @@ section.module.parallax{
       -webkit-justify-content: space-between;
               justify-content: space-between;
       padding: 0 20px;
+      height: 917px;
     }
 
     &__bio {
@@ -171,7 +172,7 @@ section.module.parallax{
       font-weight: bold;
       height: 140px;
       width: 100%;
-      bottom:163px;
+      bottom:140px;
       padding: 0 260px;
       position: relative;
       z-index: 1000;
@@ -228,7 +229,7 @@ section.module.parallax{
 // impressum
 .popup-container__impressum {
     h4 {
-      font-size: 30px;
+      font-size: 28px;
       color: #333;
       text-align: center;
       margin: 30px 0;
@@ -236,11 +237,12 @@ section.module.parallax{
     }
 
     h5 {
-      font-size: 22px;
+      font-size: 20px;
       color: #333;
       text-align: left;
       margin-bottom: 15px;
       font-weight: bold;
+      padding-right: 50px;
     }
 
      p {
@@ -248,6 +250,11 @@ section.module.parallax{
       color: #333;
       text-align: left;
       margin-bottom: 5px;
+      padding-right: 60px;
+    }
+
+     p:last-child {
+      margin-bottom: 50px;
     }
 
     a {
@@ -465,6 +472,39 @@ section.module.parallax{
     &__impressum {
       margin: 20px 0 0;
     }
+  }
+
+  .popup-container__impressum {
+    h4 {
+      font-size: 22px;
+      margin: 20px 0;
+      padding-right: 30px;
+    }
+
+    h5 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      padding-right: 30px;
+    }
+
+    p {
+      padding-right: 30px;
+    }
+
+  }
+
+  .bild-box img {
+    float: none !important;
+    text-align: center;
+    display: block;
+    padding: 0;
+    margin: 0 auto; 
+  }
+
+  .bild-box p {
+    padding-top: 10px !important;
+    font-size: 14px;
+    text-align: center;
   }
 }
 
