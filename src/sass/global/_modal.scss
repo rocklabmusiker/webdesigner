@@ -87,6 +87,13 @@
 	cursor: pointer;
 }
 
+.popup-container__map iframe {
+	width: 100%;
+	height: 450px;
+	border: none;
+
+}
+
 /* my popups impressum*/
 
 .popup-position__impressum {

@@ -11,6 +11,7 @@
 	     -o-background-size: cover;
 	        background-size: cover;
 	background-position: 50% 0;
+	height: 917px;
 	
 	&__m-wrap h3{
 	    font-size: 40px;
@@ -181,12 +182,10 @@
 
 @include max_1200 {
 
-	.parallax-1{
-	  	height: 770px;
-	}
 
 	.bitten {
-
+		height: 770px;
+		
 		&__m-wrap h3{
 		    font-size: 40px;
 			margin-top: 30px;
@@ -229,11 +228,10 @@
 
 @include max_650 {
 
-	.parallax-1{
-	  	height: 1400px;
-	}
 
 	.bitten {
+		
+		height: 1400px;
 
 		&__m-wrap h3{
 		    font-size: 40px;
@@ -266,12 +264,10 @@
 
 @include max_480 {
 
-	.parallax-1{
-	  	height: 1300px;
-	}
 
 	.bitten {
-
+		height: 1300px;
+		
 		&__m-wrap h3{
 		    font-size: 30px;
 			margin-top: 40px;
@@ -312,4 +308,11 @@
 	}
 
 
+}
+
+@include max_360 {
+
+	.bitten {
+	  	height: 1260px;
+	}
 }

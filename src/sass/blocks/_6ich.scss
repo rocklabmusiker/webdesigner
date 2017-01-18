@@ -32,7 +32,7 @@ section.module.parallax{
     &__bio {
       max-width: 600px;
       background-color: #FFF;
-      padding: 0 70px;
+      padding: 0 70px 50px 70px;
       -webkit-box-shadow: 5px 5px 10px rgba(1,1,1, .2);
               box-shadow: 5px 5px 10px rgba(1,1,1, .2);
     }
@@ -280,9 +280,8 @@ section.module.parallax{
       font-size: 16px;
       padding-top: 115px;
     }
-
-
 }
+
 
 
 @include max_1760 {
@@ -377,7 +376,7 @@ section.module.parallax{
 
     &__bio {
         height: auto;
-        padding: 20px;
+        padding: 20px 20px 50px 20px;
     }
 
     &__bio img:nth-of-type(1) {
@@ -525,5 +524,18 @@ section.module.parallax{
   .ich__impressum {
       margin: 20px 0 0;
   }
+
+}
+
+@include max_360 {
+  .section.ich {
+      height: 1625px;
+  }
+
+  .ich__bottom {
+     bottom: -324px;
+     height: 390px;
+  }
+
 
 }

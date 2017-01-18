@@ -37,7 +37,6 @@
     z-index: 8030
 }
 .fancybox-opened .fancybox-skin {
-    -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5)
 }
@@ -48,9 +47,7 @@
 .fancybox-inner {
     overflow: hidden
 }
-.fancybox-type-iframe .fancybox-inner {
-    -webkit-overflow-scrolling: touch
-}
+
 .fancybox-error {
     color: #444;
     font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -107,7 +104,6 @@
     cursor: pointer;
     text-decoration: none;
     background: transparent url(../img/blank.gif);
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     z-index: 8040
 }
 .fancybox-prev {
@@ -198,7 +194,6 @@
     padding: 2px 20px;
     background: transparent;
     background: rgba(0, 0, 0, 0.8);
-    -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
     text-shadow: 0 1px 2px #222;
@@ -224,21 +219,7 @@
     background: #000;
     background: rgba(0, 0, 0, .8)
 }
-/* @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
-    #fancybox-loading,
-    .fancybox-close,
-    .fancybox-prev span,
-    .fancybox-next span {
-        background-image: url(../img/fancybox_sprite@2x.png);
-        background-size: 44px 152px
-    }
-    #fancybox-loading div {
-        background-image: url(../img/fancybox_loading@2x.gif);
-        background-size: 24px 24px
-    }
-} */
+
 article,
 aside,
 details,
@@ -266,7 +247,6 @@ audio:not([controls]) {
 }
 html {
     font-family: sans-serif;
-    -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%
 }
 body {
@@ -361,7 +341,6 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    -webkit-appearance: button;
     cursor: pointer
 }
 button[disabled],
@@ -374,15 +353,14 @@ input[type="radio"] {
     padding: 0
 }
 input[type="search"] {
-    -webkit-appearance: textfield;
+
     -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
     box-sizing: content-box
 }
-input[type="search"]::-webkit-search-cancel-button,
+/* input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none
-}
+} */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;

@@ -172,7 +172,7 @@ section.module.parallax{
 
 @include max_1300 {
 	.section.warum {
-			height: 1900px;
+			height: 1800px;
 			background-repeat: repeat;
 		}
 
@@ -207,6 +207,10 @@ section.module.parallax{
 
 
 @include max_650 {
+	.section.warum {
+			height: 1600px;
+			background-repeat: repeat;
+	}
 
 	.warum__m-wrap {
 		-webkit-flex-direction: row;
@@ -303,7 +307,7 @@ section.module.parallax{
 
 @include max_360 {
 	.section.warum {
-	    height: 2370px;
+	    height: 2240px;
 	}
 }
 
@@ -315,7 +319,7 @@ section.module.parallax{
 
 @include max_320 {
 	.section.warum {
-	    height: 2740px;
+	    height: 2360px;
 	}
 }
 
