@@ -183,15 +183,6 @@ $(window).scroll(function() {
     }
 
 
-// nice scroll
-
-
-/*$(document).ready(
-    function() {
-      $("#popup-container__impressum").niceScroll({cursorcolor:"#00F"});
-    }
-); */
-
 
 
 jQuery(document).ready(function() {
@@ -261,7 +252,7 @@ $(".ich__impressum a").click(function() {
     });
 });
 
-$(".popup-position__impressum").click(function() {
+$(".popup-close__impressum").click(function() {
     $('.popup-position__impressum').css({opacity: '0', transition: 'opacity .5s'});
     setTimeout(function () {
       $('.popup-position__impressum').css({ display: 'none'});
