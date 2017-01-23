@@ -6,7 +6,6 @@ $('<link rel=stylesheet type=text/css href=css/main.css>').appendTo('head');
 
 
 //= libs/jquery.nicescroll.js
-//= libs/jquery.arcticmodal.min.js
 //= libs/jquery.flip.min.js
 //= libs/modernizr.js
 //= libs/fusionad.js

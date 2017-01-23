@@ -3,7 +3,7 @@ $frm = $_POST['frmid'];
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
-
+$text = $_POST['text'];
 
 
 $utm_source = $_POST['utm_source'];
@@ -35,6 +35,7 @@ $message = "Форма: $frm\n\n";
 $message .= "Имя: $name\n";
 $message .= "Телефон: $phone\n\n";
 $message .= "Email: $email\n";
+$message .= "Text: $text\n";
 $message .= "Источник: $utm_source\n";
 $message .= "Тип источника: $utm_medium\n";
 $message .= "Кампания: $utm_campaign\n";

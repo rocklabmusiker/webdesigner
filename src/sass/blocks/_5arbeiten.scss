@@ -342,9 +342,28 @@
 	}
 }
 
+@include max_750 {
+	.arbeiten {
+		&__lange {
+			padding: 12px 0 25px 120px;	
+		}
+	}
+}
+
+@include max_650 {
+	.arbeiten {
+		background-image: none;
+		background-color: #6CCEF1;
+		
+		&__lange {
+			padding: 12px 0 25px 120px;	
+		}
+	}
+}
+
 @include max_600 {
 	.arbeiten {
-
+		height: 2000px;
 		&__box-blue {
 			display: none;
 		}
@@ -354,11 +373,15 @@
 		}
 
 		&__bonus img:nth-child(1){
-	    	top: -6%;
+	    	top: 0;
 		}
 
 		&__bonus img:nth-child(2){
-	    	top: 3%;
+	    	top: 7%;
+		}
+
+		&__bonus img:nth-child(3){
+	    	top: 14%;
 		}
 
 		&__kostet {

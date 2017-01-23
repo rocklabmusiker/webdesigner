@@ -137,7 +137,7 @@
 		height: 917px;
 		
 		&__m-wrap h3 {
-			font-size: 35px;
+			font-size: 33px;
 			padding: 0;
 			text-align: center;
 			margin: 50px;
@@ -197,7 +197,7 @@
 
 	.was-gibt {
 		&__m-wrap h3 {
-			font-size: 30px;
+			font-size: 28px;
 			margin: 30px;
 		}
 
@@ -212,13 +212,30 @@
 
 }
 
+@include max_650 {
+	.was-gibt {
+		background-image: none;
+		background-color: #8AF04D;
+		
+		&__m-wrap h3 {
+			color: #FFF;
+		}
+
+		&__back_green {
+			background-color: #2FB3E1;
+		}
+	}
+}
+
+
+
 @include max_480 {
 
 	.was-gibt {
-		height: 1000px;
+		height: 1040px;
 		
 		&__m-wrap h3 {
-			font-size: 22px;
+			font-size: 20px;
 			margin: 30px;
 		}
 

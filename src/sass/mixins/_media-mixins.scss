@@ -119,3 +119,21 @@
 		@content;
 	}
 }
+
+/* @mixin min_1200 {
+	@media only screen and(min-width: 1200px) and (max-width: 1920px){
+		@content;
+	}
+}
+
+@mixin min_960 {
+	@media only screen and(min-width: 960px) (max-width: 1199px){
+		@content;
+	}
+}
+
+@mixin min_700 {
+	@media only screen and(min-width: 700px) and (max-width: 959px){
+		@content;
+	}
+} */

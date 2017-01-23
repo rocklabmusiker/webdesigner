@@ -7,30 +7,22 @@
 					<h4>Daniel Wagner</h4>
 					<span>35 Jahre alt</span>
 					<span>Web–Entwickler</span>
-					<p>Ich bin ursprünglich aus Kasachstan, lebe in Deutschland seit 15 Jahren, bin verheiratet und habe 3 Kinder.</p>
-					<p>In der Webentwicklung bin ich schon seit mehr als 3 Jahre lang beschäftigt, habe alles selbst gelernt und bin immer noch dabei.</p>
-					<span>Ich kann HTML, CSS(Sass), jQuery, Wordpress, Bootstrap, Foundation, GULP, GIT, Photoshop zur Zeit lerne ich PHP und MySQL.</span>
-					<span>Ich spreche Deutsch, Russisch(Muttersprache), Englisch(vorgeschritten).</span>
+					<p>Ich bin 1981 in Kasachstan geboren. Seit 2002 lebe ich mit meiner Familie in Deutschland. Hier sind auch meine drei Töchter geboren.</p>
+					<p>Seit 2015 arbeite ich in Eckernförde als selbstständiger Webdesigner. Meine Arbeitsschwerpunkte sind HTML, CSS(Sass), jQuery, Wordpress, Bootstrap, Foundation, GULP, GIT und Photoshop. 
+					</p>
+					<span>Russisch ist meine Muttersprache, außerdem spreche ich Englisch und natürlich Deutsch.</span>
 					
 				</div>
 				<div class="ich__form-block">
 					<h4>HABEN SIE NOCH FRAGEN?</h4>
 					<h4>SCHREIBEN SIE MIR.</h4>
 					<form class="ich__form form" action="ajax/mail.php" method="post">
-						<input type="text" name="name" placeholder="Ihr Name">
-						<input type="text" name="email" placeholder="Ihre E-mail">
-						<input type="hidden" name="frmid" value="Форма в первом блоке">
-						<textarea placeholder="Ihre Nachricht"></textarea>
-						<button type="submit">ABSENDEN</button>
+						<input type="text" name="name" id="name" placeholder="Ihr Name">
+						<input type="text" name="email" id="email" placeholder="Ihre E-mail">
+						<textarea placeholder="Ihre Nachricht" id="message"></textarea>
+						<button type="submit" id="send" class="btn">ABSENDEN</button>
 					</form>
 					
-					<!-- pop up -->
-					<div id="hidden-box">
-					    <div id="form-error-pop">
-						<div id="form-error-text"></div>
-					    </div>
-					    <div id="okgo">Danke für die Nachricht</div>	
-					</div>
 				</div>	
 		 	</div>
 

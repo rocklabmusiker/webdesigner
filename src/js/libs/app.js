@@ -151,12 +151,12 @@ $(".start").hover(function() {
 $(".start").click(function() {
   $(".arbeiten__boy img").animate({top: "-200%"}, 1500);
   $(".start").css({ display: 'none', transition: 'all .5s ease'});
-
-  setTimeout(function () {
-    $(".arbeiten").css({ backgroundImage: 'url(../../images/desktop/arbeiten_back-bonus.jpg)', background: 'all .5s ease'});
-    $(".arbeiten__bonus").css({ opacity: '1', transition: 'all .5s ease'});
-  }, 1000);
-  
+  if ($(window).width() > 650) {
+    setTimeout(function () {
+      $(".arbeiten").css({ backgroundImage: 'url(../../images/desktop/arbeiten_back-bonus.jpg)', background: 'all .5s ease'});
+      $(".arbeiten__bonus").css({ opacity: '1', transition: 'all .5s ease'});
+    }, 1000);
+  }
 });
 
 // boxen bei kosten
@@ -182,6 +182,56 @@ $(window).scroll(function() {
         });}});
     }
 
+//form
+
+
+$('#send').click (function () {
+  var email = $('#email').val ();
+  var name = $('#name').val ();
+  var message = $('#message').val ();
+  $.ajax({
+    url:      'ajax/kontakti.php',
+    type:   'POST',
+    cache:    false,
+    data:     {'name':name, 'email':email, 'message':message},
+    dataType: 'html',
+    beforeSend: function () {
+      $('#send').attr ("disabled", "disabled");
+    },
+    success: function(data) {
+      if (data == true) {
+        $('#name').val ("");
+        $('#email').val ("");
+        $('#message').val ("");
+        $('#send').text ("Сообщение отправлено");
+        $('#email').css ("border-color", "#60fc8c");
+        $('#name').css ("border-color", "#60fc8c");
+        $('#message').css ("border-color", "#60fc8c");
+      } else {
+        if (data == false)        
+          alert ("Что-то пошло не так! Сообщение не отправлено");
+        else {          
+          switch (data) {
+          case "Имя не указано":
+          $('#name').css ("border-color", "#f7b4b4");
+          break;
+          case "Сообщение не указано":
+          $('#message').css ("border-color", "#f7b4b4");
+          break;
+          case "Неправильный e-mail":
+          $('#email').css ("border-color", "#f7b4b4");
+          break;
+          default:
+          $('#email').css ("border-color", "#f7b4b4");
+          $('#message').css ("border-color", "#f7b4b4");
+          $('#name').css ("border-color", "#f7b4b4");
+          }
+        }
+      }
+      $('#send').removeAttr ("disabled");       
+    }
+  });
+});
 
 
 
@@ -261,84 +311,5 @@ $(".popup-close__impressum").click(function() {
     }, 1000);
 });
 
-
-
-
-
-
-// ======скрипты form=======
-
-
-    // проверка имени на валидность
-    $('input[name="name"]').blur(function() {if($(this).val().length < 2) {$(this).addClass('error-input');}});
-    $('input[name="name"]').focus(function() {$(this).removeClass('error-input');});
-
-
-    // проверка email на валидность
-    $('input[name="email"]').blur(function() {if($(this).val().length < 5) {$(this).addClass('error-input');}});
-    $('input[name="email"]').focus(function() {$(this).removeClass('error-input');});
-
-    // проверка телефона на валидность и подключает маску
-    $('input[name="phone"]').mask('+7 (999) 999-99-99');
-    $('input[name="phone"]').blur(function() {if($(this).val().length != 18) {$(this).addClass('error-input');}});
-    $('input[name="phone"]').focus(function() {$(this).removeClass('error-input');});
-
-    // локация
-    $.get("http://ipinfo.io", function(response) {geo_url='http://ipgeobase.ru:7020/geo?ip='+response.ip; run_geo(geo_url);}, "jsonp");
-    utm=[];$.each(["utm_source","utm_medium","utm_campaign","utm_term",'source_type','source','position_type','position','added','creative','matchtype'],function(i,v){$('<input type="hidden" />').attr({name: v, class: v, value: function(){if(getURLParameter(v) == undefined)return '-'; else return getURLParameter(v)}}).appendTo("form")});
-    $('<input type="hidden" />').attr({name: 'url', value: document.location.href}).appendTo("form");
-    $('<input type="hidden" />').attr({name: 'title', value: document.title}).appendTo("form");
-
-
-$('form').submit(function(e){
-      e.preventDefault();
-      $(this).find('input[type="text"]').trigger('blur');
-      if(!$(this).find('input[type="text"]').hasClass('error-input')){
-          var type=$(this).attr('method');
-          var url=$(this).attr('action');
-          var data=$(this).serialize();
-          var track_event=$(this).find('input[name="event"]').val();
-          $.ajax({type: type, url: url, data: data,
-              success : function(){
-                $.arcticmodal('close');$('#okgo').arcticmodal();
-                  //submit_track_event(track_event);
-              }
-          }); 
-      }else{
-
-          var eror_pop_text = '';
-
-          if ($(this).find('input[name="name"]').hasClass('error-input') && !$(this).find('input[name="email"]').hasClass('error-input') && !$(this).find('input[name="phone"]').hasClass('error-input')) {
-              eror_pop_text = 'Bitte geben Sie Ihren Namen ein';
-          } else
-
-          if ($(this).find('input[name="phone"]').hasClass('error-input') && !$(this).find('input[name="email"]').hasClass('error-input') && !$(this).find('input[name="name"]').hasClass('error-input')){
-              eror_pop_text = 'Bitte geben Sie Ihre Telefonnummer ein';
-          }else
-
-          if ($(this).find('input[name="email"]').hasClass('error-input') && !$(this).find('input[name="phone"]').hasClass('error-input') && !$(this).find('input[name="name"]').hasClass('error-input')){
-              eror_pop_text = 'Bitte geben Sie Ihre E-mail ein';
-          }else
-
-          if ($(this).find('input[name="email"]').hasClass('error-input') && $(this).find('input[name="name"]').hasClass('error-input') && !$(this).find('input[name="phone"]').hasClass('error-input')){
-              eror_pop_text = 'Bitte geben Sie Ihren Namen und E-mail ein';
-          }else
-
-          if ($(this).find('input[name="name"]').hasClass('error-input') && $(this).find('input[name="phone"]').hasClass('error-input') && !$(this).find('input[name="email"]').hasClass('error-input')){
-              eror_pop_text = 'Bitte geben Sie Ihren Namen und die Telefonnummer und ein';
-          }else
-
-          if ($(this).find('input[name="email"]').hasClass('error-input') && $(this).find('input[name="phone"]').hasClass('error-input') && !$(this).find('input[name="name"]').hasClass('error-input')){
-              eror_pop_text = 'Bitte geben Sie Ihre E-mail und die Telefonnummer ein';
-          }else
-
-          if ($(this).find('input[name="phone"]').hasClass('error-input') && $(this).find('input[name="email"]').hasClass('error-input') && $(this).find('input[name="name"]').hasClass('error-input')){
-              eror_pop_text = 'Bitte geben Sie Ihren Namen, E-mail und die Telefonnummer ein';
-          }
-
-          $('#form-error-text').html(eror_pop_text);
-          $('#form-error-pop').arcticmodal();
-      }
-    });// end scripts form
 
 });//ready end

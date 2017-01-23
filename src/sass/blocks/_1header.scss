@@ -2,6 +2,8 @@
 @import "mixins/media-mixins";
 /* @import "sprites/png-sprite";  */
 
+
+
 @include max_1550 {
 	.header__top {
     	padding: 0 50px;
@@ -19,17 +21,17 @@
 		margin-left: 70px;
 		
 		span {
-			font-size: 80px;
+			font-size: 60px;
 			top: 15px;
 		}
 		h1 {
-			font-size: 60px;
+			font-size: 40px;
 		}
 		h2 {
 			font-size: 18px;
 		}
 		p {
-			font-size: 45px;
+			font-size: 22px;
 		}
 	}
 
@@ -37,8 +39,8 @@
 
 
 @include max_1200 {
-	.section.header {
-		height: 650px;
+ 	.section.header {
+		height: 600px;
 	}
 
 	.header__phone p {
@@ -58,26 +60,14 @@
 	.header__titel {
 		margin: 50px 0 0 70px;
 		
-		span {
-			font-size: 80px;
-			top: 10px;
-		}
-		h1 {
-			font-size: 60px;
-		}
-		h2 {
-			font-size: 18px;
-		}
-		p {
-			font-size: 45px;
-		}
+		
 	}
 }
 
 @include max_1100 {
-	.section.header {
-		height: 600px;
-	}
+ 	.section.header {
+	height: 600px;
+}
 
 	.header__phone p {
 		font-size: 17px;
@@ -99,14 +89,14 @@
 	}
 
 	.header__titel {
-		margin: 50px 0 0 70px;
+		margin: 100px 0 0 70px;
 		span {
-			font-size: 70px;
+			font-size: 55px;
 			top: 10px;
 		}
 
 		h1 {
-			font-size: 50px;
+			font-size: 38px;
 		}
 
 		h2 {
@@ -114,24 +104,25 @@
 		}
 
 		p {
-			font-size: 40px;
+			font-size: 20px;
 		}
 	}
 }
 
 @include max_900 {
-	.section.header {
-		height: 450px;
-		min-height: 450px;
-	}
+
 
 	.header {
+		background-image: url(../images/tablet/header_back.jpg);
+		height: 450px;
+		
 		&__top {
 			-webkit-flex-direction: column;
 			    -ms-flex-direction: column;
 			        flex-direction: column;
 			height: 150px;
 			padding: 0;
+			
 		}
 
 		&__phone {
@@ -145,23 +136,25 @@
 		}
 
 		&__titel {
-			margin: -70px 0 0 70px;
+			margin: 70px 0 0 70px;
 			
 			span {
-				font-size: 60px;
-				top: 14px;
+				font-size: 38px;
+				top: 7px;
 			}
 
 			h1 {
-				font-size: 40px;
+				font-size: 27px;
 			}
 
 			h2 {
 				font-size: 17px;
+				margin: 100px 0 0 -21px;
 			}
 
 			p {
-				font-size: 35px;
+				font-size: 19px;
+				margin-top: 7px;
 			}
 		}
 	}
@@ -265,11 +258,17 @@
 	}
 }
 
-@include max_600 {
+
+
+@include max_650 {
 	.section.header {
 		height: 350px;
-		min-height: 350px;
 	}
+
+	.header {
+		background-image: none;
+		background-color: #2FB4E1;
+	} 
 
 	.nav__button {
 	    margin: -35px 17px 0 0;
@@ -289,26 +288,33 @@
 	}
 
 	.header__titel {
-		margin: -125px 0 0 40px;
+		margin: -125px auto;
 		
 		span {
-			font-size: 40px;
-			top: 7px;
+			font-size: 25px;
+			top: 0;
+			text-align: center;
 		}
 
 		h1 {
-			font-size: 27px;
+			font-size: 20px;
+			text-align: center;
+			left: 0;
 		}
 
 		h2 {
 			font-size: 16px;
-			margin: 100px 0 0 -21px;
+			margin: 100px 0 15px -21px;
+			text-align: center;
+			margin: 100px 0 15px;
 		}
 
 		p {
-			font-size: 20px;
+			font-size: 16px;
 			margin-top: 7px;
 			font-weight: bold;
+			margin: 0;
+			text-align: center;
 		}
 	}
 }
