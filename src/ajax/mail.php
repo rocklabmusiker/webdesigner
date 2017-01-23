@@ -1,55 +1,35 @@
-<?php
-$frm = $_POST['frmid'];
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$email = $_POST['email'];
-$text = $_POST['text'];
 
-
-$utm_source = $_POST['utm_source'];
-$utm_medium = $_POST['utm_medium'];
-$utm_campaign = $_POST['utm_campaign'];
-$utm_term = $_POST['utm_term'];
-$source_type = $_POST['source_type'];
-$source = $_POST['source'];
-$position_type = $_POST['position_type'];
-$position = $_POST['position'];
-$added = $_POST['added'];
-$creative = $_POST['creative'];
-$matchtype = $_POST['matchtype'];
-$location = $_POST['location'];
-$url = $_POST['url'];
-$title = $_POST['title'];
-
-$subject = 'Anfrage von Jungewebdesigner';	
-
-//$headers= "From: noreply <noreply@noreply.ru>\r\n";
-//$headers.= "Reply-To: noreply <noreply@noreply.ru>\r\n";
-$headers.= "X-Mailer: PHP/" . phpversion()."\r\n";
-$headers.= "MIME-Version: 1.0" . "\r\n";
-$headers.= "Content-type: text/plain; charset=utf-8\r\n";
+<?php 
 
 $to = "rocklabmusiker@gmail.com";
+$email = $_POST['email'];
 
-$message = "Форма: $frm\n\n";
-$message .= "Имя: $name\n";
-$message .= "Телефон: $phone\n\n";
-$message .= "Email: $email\n";
-$message .= "Text: $text\n";
-$message .= "Источник: $utm_source\n";
-$message .= "Тип источника: $utm_medium\n";
-$message .= "Кампания: $utm_campaign\n";
-$message .= "Ключевое слово: $utm_term\n";
-$message .= "Тип площадки(поиск или контекст): $source_type\n";
-$message .= "Площадка: $source\n";
-$message .= "Спецразмещение или гарантия: $position_type\n";
-$message .= "Позиция объявления в блоке: $position\n";
-$message .= "Показ по дополнительным ролевантным фразам: $added\n";
-$message .= "Идентификатор объявления: $creative\n";
-$message .= "Тип соответствия ключа(e-точное/p-фразовое/b-широкое): $matchtype\n\n";
-$message .= "Гео-положение отправителя: $location\n\n";
-$message .= "Ссылка на сайт: $url\n";
-$message .= "Заголовок: $title\n\n";
+$err = "";
+if (trim ($_POST['name']) == "" && trim ($_POST['email']) == "" && trim ($_POST['message']) == "" ){
+	$err = "Bitte, fühlen Sie alle Felder aus";
+} 
+	
+else if (trim ($_POST['name']) == "")  {
+	$err = "Der Name ist nicht eingegeben";
+}	
+	
+else if (!((strpos($email, ".") > 0) && (strpos($email, "@") > 0)))	{
+	$err = "E-mail ist nicht korrekt";
+}
 
-mail ($to,$subject,$message,$headers);
-?>
+else if (trim ($_POST['message']) == "")  {
+	$err = "Die Nachricht ist nicht eingegeben";
+}	
+	
+if ($err != ""){
+	echo $err;
+	exit;
+}
+
+$msg = "Die Nachricht wurde von <b>".$_POST['name']."</b>.<br><b> Die Nachricht: </b> <br>".$_POST['message']."<br><br> Die Nachricht kommt aus jungewebdesigner.de";
+$subject = "=?utf-8?B?".base64_encode("Die Nachricht kommt von jungewebdesigner.de"). "?=";
+$headers = "From: $email\r\nReply-to: $email\r\nContent-type: text/html; charset=unf-8\r\n";
+$success = mail ($to, $subject, $msg, $headers);
+echo $success;
+
+ ?>

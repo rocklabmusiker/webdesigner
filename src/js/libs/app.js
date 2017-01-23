@@ -184,13 +184,12 @@ $(window).scroll(function() {
 
 //form
 
-
 $('#send').click (function () {
   var email = $('#email').val ();
   var name = $('#name').val ();
   var message = $('#message').val ();
   $.ajax({
-    url:      'ajax/kontakti.php',
+    url:      'ajax/mail.php',
     type:   'POST',
     cache:    false,
     data:     {'name':name, 'email':email, 'message':message},
@@ -203,22 +202,22 @@ $('#send').click (function () {
         $('#name').val ("");
         $('#email').val ("");
         $('#message').val ("");
-        $('#send').text ("Сообщение отправлено");
+        $('#send').text ("Nachricht wurde gesendet");
         $('#email').css ("border-color", "#60fc8c");
         $('#name').css ("border-color", "#60fc8c");
         $('#message').css ("border-color", "#60fc8c");
       } else {
         if (data == false)        
-          alert ("Что-то пошло не так! Сообщение не отправлено");
+          alert ("Etwas ist schief gelaufen! Nachricht wurde nicht gesendet");
         else {          
           switch (data) {
-          case "Имя не указано":
+          case "Der Name ist nicht eingegeben":
           $('#name').css ("border-color", "#f7b4b4");
           break;
-          case "Сообщение не указано":
+          case "Die Nachricht ist nicht eingegeben":
           $('#message').css ("border-color", "#f7b4b4");
           break;
-          case "Неправильный e-mail":
+          case "E-mail ist nicht korrekt":
           $('#email').css ("border-color", "#f7b4b4");
           break;
           default:
@@ -232,6 +231,7 @@ $('#send').click (function () {
     }
   });
 });
+
 
 
 
@@ -310,6 +310,7 @@ $(".popup-close__impressum").click(function() {
       $('.popup-position__impressum').css({ display: 'none'});
     }, 1000);
 });
+
 
 
 });//ready end

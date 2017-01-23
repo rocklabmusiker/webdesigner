@@ -16,16 +16,14 @@
 				<div class="ich__form-block">
 					<h4>HABEN SIE NOCH FRAGEN?</h4>
 					<h4>SCHREIBEN SIE MIR.</h4>
-					<form class="ich__form form" action="ajax/mail.php" method="post">
-						<input type="text" name="name" id="name" placeholder="Ihr Name">
-						<input type="text" name="email" id="email" placeholder="Ihre E-mail">
-						<textarea placeholder="Ihre Nachricht" id="message"></textarea>
-						<button type="submit" id="send" class="btn">ABSENDEN</button>
+					<form class="ich__form form">
+						<input type="text" name="name" id="name" placeholder="Ihr Name" onclick="$(this).css('border-color', '#2fb3e1')">
+						<input type="text" name="email" id="email" placeholder="Ihre E-mail" onclick="$(this).css('border-color', '#2fb3e1')">
+						<textarea placeholder="Ihre Nachricht" id="message" onclick="$(this).css('border-color', '#2fb3e1')"></textarea>
+						<button type="button" id="send" class="btn">ABSENDEN</button>
 					</form>
-					
 				</div>	
 		 	</div>
-
 		</div>
 		<div class="ich__bottom">
 			<div class="ich__first-box">
