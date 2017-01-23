@@ -113,7 +113,6 @@
 
 
 	.header {
-		background-image: url(../images/tablet/header_back.jpg);
 		height: 450px;
 		
 		&__top {
@@ -226,7 +225,7 @@
 		&__button:hover span:nth-of-type(1) {
 			width: 30px;
 			height: 3px;
-			background-color: #2FB4E1;
+			background-color: #7467BF;
 			-webkit-transition: all .5s ease;
 			   -moz-transition: all .5s ease;
 			    -ms-transition: all .5s ease;
