@@ -427,6 +427,8 @@ section.module.parallax{
 
 @include max_600 {
   .section.ich {
+      background-image: none;
+      background-color: #BBD5E4;
       height: 1670px;
   }
   .ich {
@@ -529,11 +531,11 @@ section.module.parallax{
 
 @include max_360 {
   .section.ich {
-      height: 1625px;
+      height: 1700px;
   }
 
   .ich__bottom {
-     bottom: -324px;
+     bottom: -400px;
      height: 390px;
   }
 

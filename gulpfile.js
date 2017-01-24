@@ -87,6 +87,7 @@ gulp.task('image:build', function () {
     gulp.src(path.src.img)
         .pipe(imagemin({
             progressive: true,
+            optimizationLevel: 3,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()],
             interlaced: true

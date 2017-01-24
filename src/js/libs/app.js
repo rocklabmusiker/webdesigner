@@ -171,7 +171,7 @@ $(window).scroll(function() {
 
 
  // функции локации
-  function getURLParameter(name) {return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;} 
+/*  function getURLParameter(name) {return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;} 
     function run_geo(geo_url){
         $.ajax({type: 'GET',url: geo_url,dataType: 'xml',
             success: function(xml) {$(xml).find('ip').each(function(){
@@ -180,7 +180,7 @@ $(window).scroll(function() {
             if(city!=region){var ipg = city+', '+region;}else{var ipg = city;}
             $('<input type="hidden" />').attr({name: 'location', class: 'location', value:ipg}).appendTo("form");
         });}});
-    }
+    }*/
 
 //form
 
@@ -237,8 +237,6 @@ $('#send').click (function () {
 
 jQuery(document).ready(function() {
   
-
-
 //remove placeholder
  $('input,textarea').focus(function(){
    $(this).data('placeholder',$(this).attr('placeholder'))
@@ -303,6 +301,7 @@ $(".ich__impressum a").click(function() {
       $('.popup-position__impressum').css({opacity: '1', transition: 'opacity .5s'});
     });
 });
+
 
 $(".popup-close__impressum").click(function() {
     $('.popup-position__impressum').css({opacity: '0', transition: 'opacity .5s'});

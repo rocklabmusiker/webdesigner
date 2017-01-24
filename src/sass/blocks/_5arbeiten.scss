@@ -41,6 +41,7 @@
 		font-size: 18px;
 		text-align: left;
 		font-weight: bold;
+		padding: 0 0 5px;
 	}
 
 	&__content span {
@@ -108,6 +109,12 @@
 		opacity: 0;
 		-webkit-border-radius: 30px;
 		        border-radius: 30px;
+		
+	}
+
+	&__lange  h3 {
+		margin: -15px 0 0 0;
+
 	}
 
 	&__lange .learn {
@@ -345,7 +352,7 @@
 @include max_750 {
 	.arbeiten {
 		&__lange {
-			padding: 12px 0 25px 120px;	
+			padding: 25px 0 25px 120px;	
 		}
 	}
 }
@@ -356,7 +363,19 @@
 		background-color: #6CCEF1;
 		
 		&__lange {
-			padding: 12px 0 25px 120px;	
+			padding: 25px 0 25px 120px;	
+		}
+
+		&__content h3 {
+			font-size: 23px;
+		}
+
+		&__content p {
+			font-size: 17px;
+		}
+
+		&__content span {
+			font-size: 15px;
 		}
 	}
 }
@@ -364,6 +383,7 @@
 @include max_600 {
 	.arbeiten {
 		height: 2000px;
+		
 		&__box-blue {
 			display: none;
 		}
@@ -433,3 +453,7 @@
 		}
 	}
 }
+
+
+
+		
