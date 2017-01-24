@@ -47,6 +47,8 @@ li {
 		font-weight: bold;
 		text-align: right;
 		word-spacing: 32px;
+		position: relative;
+		z-index: 99999;
 	}
 
 	&__titel {
@@ -297,7 +299,7 @@ li {
 		}
 
 		&__phone {
-			margin: 0 auto;
+			margin: 10px auto 0;
 		}
 
 		&__phone p {
@@ -341,7 +343,7 @@ li {
 			background-color: #E75593;
 			height: 320px;
 			position: relative;
-			top: 5px;
+			top: 18px;
 			z-index: 1000;
 			width: 100%;
 
@@ -362,7 +364,7 @@ li {
 
 		&__button {
 			float: right;
-			margin: -40px 17px 0 0;
+			margin: -10px 17px 0 0;
 			position: relative;
 			z-index: 100;
 			cursor: pointer;
@@ -433,7 +435,7 @@ li {
 
 @include max_650 {
 	.section.header {
-		height: 350px;
+		height: 420px;
 	}
 
 	.header {
@@ -442,16 +444,16 @@ li {
 	} 
 
 	.nav__button {
-	    margin: -35px 17px 0 0;
+	    margin: -10px 17px 0 0;
 	}
 
 	.nav__list {
-	    height: 305px;
-	    top: 0;
+	    height: 330px;
+	    top: 40px;
 	}
 
 	.header__phone {
-	    margin: -4px auto 0;
+	    margin: 10px auto 0;
 	}
 
 	.header__phone p{
