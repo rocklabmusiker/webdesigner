@@ -227,12 +227,19 @@
 
 
 @include max_650 {
+	.section .wrap {
+		height: auto;
+	}
 
+	.section .bitten {
+		height: auto;
+		padding: 0 100px 0 0;
+	}
 
 	.bitten {
 		background-image: none;
 		background-color: #FEDE19;
-		height: 1400px;
+		height: auto;
 
 		&__m-wrap h3{
 		    font-size: 40px;
@@ -267,7 +274,6 @@
 
 
 	.bitten {
-		height: 1300px;
 		
 		&__m-wrap h3{
 		    font-size: 30px;
@@ -311,9 +317,3 @@
 
 }
 
-@include max_360 {
-
-	.bitten {
-	  	height: 1260px;
-	}
-}

@@ -213,9 +213,20 @@
 }
 
 @include max_650 {
+	.section .wrap {
+		height: auto;
+	}
+
+	.section .was-gibt {
+		height: auto;
+		padding: 0 100px 0 0;
+	}
+
+
 	.was-gibt {
 		background-image: none;
 		background-color: #8AF04D;
+		height: auto;
 		
 		&__m-wrap h3 {
 			color: #FFF;
@@ -232,7 +243,6 @@
 @include max_480 {
 
 	.was-gibt {
-		height: 1040px;
 		
 		&__m-wrap h3 {
 			font-size: 20px;

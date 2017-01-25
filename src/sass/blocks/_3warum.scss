@@ -115,22 +115,6 @@ section.module.parallax{
 	    text-align: justify;
 	}
 
-/* 	&__footer {
-	margin-top: 0;
-}
-
-&__pink-first-row {
-	margin-top: 56px;
-}
-
-&__pink-second-row {
-	margin-top: 37px;
-}
-
-&__blue-second-row {
-	margin-top: 18px;
-} */
-
 }
 
 
@@ -152,22 +136,6 @@ section.module.parallax{
 			height: auto;
 			padding: 32px 58px 50px;
 		}
-
-		/* &__footer {
-		    margin-top: -20px;
-		}
-		
-		&__pink-first-row {
-		margin-top: 37px;
-		}
-		
-		&__pink-second-row {
-			margin-top: 16px;
-		}
-		
-		&__blue-second-row {
-			margin-top: -22px;
-		} */
 	}
 }
 
@@ -210,8 +178,18 @@ section.module.parallax{
 
 
 @include max_650 {
+
+	.section .wrap {
+		height: auto;
+	}
+
+	.section .warum {
+		height: auto;
+		padding: 0 100px 0 0;
+	}
+
 	.section.warum {
-			height: 1600px;
+			height: auto;
 			background-image: none;
 			background-color: #BBD5E4;
 	}
@@ -279,62 +257,3 @@ section.module.parallax{
 
 }
 
-@include max_600 {
-	.section.warum {
-	    height: 1800px;
-	}
-}
-
-@include max_480 {
-	.section.warum {
-	    height: 2060px;
-	}
-}
-
-@include max_400 {
-	.section.warum {
-	    height: 2100px;
-	}
-}
-
-@include max_390 {
-	.section.warum {
-	    height: 2180px;
-	}
-}
-
-@include max_380 {
-	.section.warum {
-	    height: 2240px;
-	}
-}
-
-@include max_370 {
-	.section.warum {
-	    height: 2260px;
-	}
-}
-
-@include max_360 {
-	.section.warum {
-	    height: 2240px;
-	}
-}
-
-@include max_340 {
-	.section.warum {
-	    height: 2575px;
-	}
-} 
-
-/* @include max_320 {
-	.section.warum {
-	    height: 2360px;
-	}
-} */
-
-/* @include max_280 {
-	.section.warum {
-	    height: 2850px;
-	}
-} */
